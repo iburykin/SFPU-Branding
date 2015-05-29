@@ -1,4 +1,7 @@
-we need master page, page layouts
+This is the second priority project for SFPUC.
+The tasks in the User/Administration tasks are higher priority.
+
+We need master page and page layouts
 
 ![pag1.PNG](https://bitbucket.org/repo/A9AzjB/images/977724352-pag1.PNG)
 
