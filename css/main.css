@@ -189,25 +189,14 @@ footer p {
 aside {
 	float: right;
 	margin: 0;
-	padding: 0;
-	width: 21%;
+	padding: 0.2em 0.5em 0.2em;
+	width: 25%;
 	height: 100%;
 	box-shadow: 0 1px 1px #B6B7B7;
     -webkit-box-shadow: 0 1px 1px #B6B7B7;
     -moz-box-shadow: 0 1px 1px #B6B7B7;
     background-color: rgba(255, 255, 255, 0.3);
     border: solid 0 #B6B7B7;
-}
-aside .titleH2{
-	border-bottom-left-radius: 0;
-    -webkit-border-bottom-left-radius: 0;
-    -moz-border-radius-bottomleft: 0;
-    border-bottom-right-radius: 0;
-    -webkit-border-bottom-right-radius: 0;
-    -moz-border-radius-bottomright: 0;
-}
-aside .titleH2 h2{
-	padding: 0;
 }
 article {
 	float: left;
@@ -269,10 +258,10 @@ img#ctl00_onetidHeadbnnr2.ms-siteicon-img.SFPUCLogo{
     border: solid 0 #B6B7B7;
 }
 .mainContentLeft {
-	width: 75%;
+	width: 72%;
 	height: 100%;
 	float: left;
-	padding: 0 1em 0;
+	padding: 0.2em 0.5em 0.2em;
 	box-shadow: 0 1px 1px #B6B7B7;
     -webkit-box-shadow: 0 1px 1px #B6B7B7;
     -moz-box-shadow: 0 1px 1px #B6B7B7;
@@ -537,10 +526,7 @@ div.real-breadcrumb {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
-    aside {
-        float: left;
-        width: 100%;
-    }
+
 }
 
 @media print,
