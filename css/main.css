@@ -611,6 +611,36 @@ div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static.align-right ul ul > l
 	float: left;
 }
 
+/*ITS Page Layout Styles */
+.ITSleftColumnWraper, .ITSrightColumnWraper {
+	width: 20%;
+	height: 100%;
+	float: left;
+	box-shadow: 0 1px 1px #B6B7B7;
+	-webkit-box-shadow: 0 1px 1px #B6B7B7;
+	-moz-box-shadow: 0 1px 1px #B6B7B7;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: solid 0 #B6B7B7;
+}
+.ITSmainContentWraper {
+	width: 57%;
+	height: 100%;
+	margin: 0 auto;
+	box-shadow: 0 1px 1px #B6B7B7;
+	-webkit-box-shadow: 0 1px 1px #B6B7B7;
+	-moz-box-shadow: 0 1px 1px #B6B7B7;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: solid 0 #B6B7B7;
+}
+.ITSrightColumnWraper {
+	float: right;
+}
+.ITSContentWraper {
+	float: left;
+	width: 100%;
+	display: table-row;
+}
+
 /* SHAREPOINT SPECIFIC STYLE CUSTOMIZATION */
 #s4-titlerow, #s4-bodyContainer {
     padding: 0;
