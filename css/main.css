@@ -113,7 +113,7 @@ body {
     color: #222;
     font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 10pt;
     padding: 0;
     margin: 0 auto;
 }
@@ -148,21 +148,20 @@ h3 {
 }
 p{
 	padding: 0.2em 0.2em 0.2em 0.65em;
-	line-height: 1.2;
+	line-height: 1;
 }
 h2,
 h3{
 	font-family: Arial, "Lucida Grande", sans-serif;
 	page-break-after: avoid;
 	font-size: 1.4em;
-	padding: 0.2em 0;
 	color: #27AAE1;
 }
 h3{
 	font-size: 1.25em;
 }
 header {
-    height: 122px;
+    height: 111px;
     width: 87%;
     margin: 0 auto;
 	padding: 0;
@@ -182,7 +181,7 @@ footer p {
     font-size: 0.8em;
     margin-left: 1em;
 	margin-right: 1em;
-    color: #666;
+    color: #666666;
 	text-align: center;
 }
 .aside {
@@ -201,7 +200,7 @@ article {
 	float: left;
 	width: auto;
 	padding: 0;
-	margin: 0.2em 0;
+	margin: 0.1em 0;
     box-shadow: 0 1px 1px #B6B7B7;
     -webkit-box-shadow: 0 1px 1px #B6B7B7;
     -moz-box-shadow: 0 1px 1px #B6B7B7;
@@ -225,8 +224,8 @@ article p{
 
 .topLogoAndPageTitle {
     width: 100%;
-	background: url("../img/water-header-background.png");
-    height: 75px;
+	background: url("../img/topbar.png") right no-repeat;
+    height: 64px;
 	padding: 0;
 	border-radius: 2px;
 	-webkit-border-radius: 2px;
@@ -240,8 +239,8 @@ article p{
 	background-image: -ms-linear-gradient(left , rgba(0,0,0,0.2) 4%, rgba(255,255,255,0.2) 73%);
 }
 img#ctl00_onetidHeadbnnr2.ms-siteicon-img.SFPUCLogo{
-    max-width: 300px;
-    max-height: 75px;
+	max-width: 300px;
+	max-height: 75px;
     margin-top: 0.2em;
     display: block;
     opacity: 0.9;
@@ -249,7 +248,7 @@ img#ctl00_onetidHeadbnnr2.ms-siteicon-img.SFPUCLogo{
 .SFPUCPageTitle {
     width: auto;
     float: left;
-    height: 75px;
+    height: 64px;
 	vertical-align: middle;
 	margin:0;
     padding: 2em 1em 0 0.2em;
@@ -334,42 +333,41 @@ span.SFPUCimageBckg {
 	-moz-border-radius: 2px;	
 }
 
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static,
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul,
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul li,
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul li a,
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static #menu-button {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	list-style: none;
-	line-height: 1;
-	display: block;
-	position: relative;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;	
+/* Top Navigation */
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"],
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul,
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul li,
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul li a,
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static > ul{
-	margin-left: 170px;
-	margin-top: -54px;
+div[id$="_TopNavigationMenu"] a.popout {
+     background-image: url("/_layouts/15/images/menu-down.gif?rev=23") !important;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static:after,
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static > ul:after {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"]:after,
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul:after {
   content: ".";
   display: block;
   clear: both;
   visibility: hidden;
-  line-height: 0;
+  line-height: 0;	
   height: 0;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu #menu-button {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] #menu-button {
   display: none;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static {
-  width: auto;
-  border-radius: 5px;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] {
+  width: 100%;
+  border-radius: 5px;  
   background: #3db2e1;
   background: -o-linear-gradient(top, #FFFFFF,  #B6B7B7);
   background: -ms-linear-gradient(top, #FFFFFF,  #B6B7B7);
@@ -378,32 +376,31 @@ div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static {
   background: linear-gradient(to bottom, #FFFFFF,  #B6B7B7);
   box-shadow: inset 0 -3px 0 #B6B7B7, inset 0 -3px 3px #B6B7B7, inset 0 2px 2px #FFFFFF, inset 1px 0 2px #FFFFFF, inset -1px 0 2px #FFFFFF;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"].align-center > ul {
   font-size: 0;
   text-align: center;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul ul {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"].align-center ul ul {
   text-align: left;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static.align-center > ul > li {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"].align-center > ul > li {
   display: inline-block;
   float: none;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static > ul > li {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"].align-right > ul > li {
   float: right;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static.align-right ul ul {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"].align-right ul ul {
   text-align: right;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static > ul > li {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] > ul > li {
   float: left;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static > ul > li > a,
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static > a {
-  padding: 20px 25px;
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] > ul > li > a {
+  padding: 10px 15px;
   font-size: 13px;
-  color: #0076BD;
-  text-transform: uppercase;
+  color: #666666;
+ /* text-transform: uppercase; */
   letter-spacing: 1px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   font-weight: 700;
@@ -414,99 +411,51 @@ div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static > a {
   -o-transition: color .1s ease;
   transition: color .1s ease;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static > a:hover,
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static > ul > li:hover > a,
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static > ul > li > a:hover,
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static > ul > li.active > a {
-  color: #27AAE1;
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] > ul > li:hover > a,
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] > ul > li > a:hover,
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] > ul > li.active > a {
+  color: #B6B7B7;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static > ul > li.has-sub > a {
-  padding-right: 40px;
-}
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul > li.has-sub > a:after {
-  content: '';
-  position: absolute;
-  right: 5px;
-  top: 17.5px;
-  display: block;
-  width: 18px;
-  height: 18px;
-  border-radius: 9px;
-  background: #3db2e1;
-  background: -webkit-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
-  background: -ms-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
-  background: -moz-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
-  background: -o-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
-  background: linear-gradient(to bottom, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
-  box-shadow: inset 0 -1px 1px #209ed0, inset 0 2px 1px #7fcceb;
-  background-size: 36px 36px;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  -webkit-transition: all 0.05s ease-out;
-  -moz-transition: all 0.05s ease-out;
-  -ms-transition: all 0.05s ease-out;
-  -o-transition: all 0.05s ease-out;
-  transition: all 0.05s ease-out;
-}
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul > li.has-sub:hover > a:after {
-  background-position: 0 -18px;
-}
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul > li.has-sub > a:before {
-  content: '';
-  position: absolute;
-  right: 11px;
-  top: 25.5px;
-  display: block;
-  width: 0;
-  height: 0;
-  border: 3px solid transparent;
-  border-top-color: #ffffff;
-  z-index: 99;
-}
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul > li.has-sub:hover > a:before {
-  border-top-color: #19799f;
-}
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul ul {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul {
   position: absolute;
   left: -9999px;
   opacity: 0;
-  -webkit-transition: top .1s ease, opacity .1s ease;
-  -moz-transition: top .1s ease, opacity .1s ease;
-  -ms-transition: top .1s ease, opacity .1s ease;
-  -o-transition: top .1s ease, opacity .1s ease;
-  transition: top .1s ease, opacity .1s ease;
+  -webkit-transition: top .05s ease, opacity .1s ease;
+  -moz-transition: top .05s ease, opacity .1s ease;
+  -ms-transition: top .05s ease, opacity .1s ease;
+  -o-transition: top .05s ease, opacity .1s ease;
+  transition: top .05s ease, opacity .1s ease;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static > ul > li > ul {
-  top: 81px;
-  padding-top: 0;
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] > ul > li > ul {
+  top: 80px;
   border-radius: 5px;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static > ul > li:hover > ul {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] > ul > li:hover > ul {
   left: auto;
   top: 51px;
   opacity: 1;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static.align-right > ul > li:hover > ul {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"].align-right > ul > li:hover > ul {
   right: 0;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul ul ul {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul ul {
   top: 40px;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul ul > li:hover > ul {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul > li:hover > ul {
   top: 0;
   left: 178px;
   padding-left: 10px;
   opacity: 1;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static.align-right ul ul > li:hover > ul {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"].align-right ul ul > li:hover > ul {
   left: auto;
   right: 178px;
   padding-left: 0;
   padding-right: 10px;
   opacity: 1;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul ul li a {
-  width: 134px;
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul li a {
+  width: 220px;
   padding: 12px 25px;
   font-size: 13px;
   font-weight: 700;
@@ -520,22 +469,22 @@ div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul ul li a {
   -o-transition: color .1s ease;
   transition: color .1s ease;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul ul li:hover > a,
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul ul li > a:hover,
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul ul li.active > a {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul li:hover > a,
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul li > a:hover,
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul li.active > a {
   color: #cae5fd;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul ul li:first-child > a {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul li:first-child > a {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   box-shadow: inset 0 2px 2px #88d0ed;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul ul li:last-child > a {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul li:last-child > a {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-shadow: inset 0 -3px 0 #27a9de, inset 0 -3px 3px #1f9acc, 0 1px 1px rgba(0, 0, 0, 0.03), 0 2px 2px rgba(0, 0, 0, 0.05), 0 2px 3px rgba(0, 0, 0, 0.13);
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul ul > li.has-sub > a:after {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul > li.has-sub > a:after {
   right: 12px;
   top: 9.5px;
   background: #3db2e1;
@@ -548,21 +497,21 @@ div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul ul > li.has-sub > 
   background-size: 36px 36px;
   background-position: 0 0;
   background-repeat: no-repeat;
-}
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static.align-right ul ul > li.has-sub > a:after {
+}	
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"].align-right ul ul > li.has-sub > a:after {
   right: auto;
   left: 12px;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul ul > li.has-sub:hover > a:after {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul > li.has-sub:hover > a:after {
   background-position: 0 -18px;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul ul > li.has-sub > a:before {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul > li.has-sub > a:before {
   top: 15.5px;
   right: 16px;
   border-top-color: transparent;
   border-left-color: #ffffff;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static.align-right ul ul > li.has-sub > a:before {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"].align-right ul ul > li.has-sub > a:before {
   top: 15.5px;
   right: auto;
   left: 16px;
@@ -570,19 +519,155 @@ div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static.align-right ul ul > l
   border-right-color: #ffffff;
   border-left-color: transparent;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static ul ul > li.has-sub:hover > a:before {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul > li.has-sub:hover > a:before {
   border-top-color: transparent;
   border-left-color: #1c89b5;
 }
-div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static.align-right ul ul > li.has-sub:hover > a:before {
+div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"].align-right ul ul > li.has-sub:hover > a:before {
   border-top-color: transparent;
   border-left-color: transparent;
   border-right-color: #1c89b5;
 }
-
+/* TODO for small width
+@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  div#topNav.SFPUCNavigation {
+    width: 100%;
+  }
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul ul,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] > ul,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"].align-center > ul,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] > ul > li > ul,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] > ul > li:hover > ul,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul li:hover > ul,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul ul li:hover > ul,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"].align-right ul ul,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenun.align-right ul ul li:hover > ul,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"].align-right ul ul ul li:hover > ul {
+    position: relative;
+    left: 0;
+    right: auto;
+    top: 0;
+    width: 100%;
+    display: none;
+    padding: 0;
+    opacity: 1;
+    text-align: left;
+  }
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul li {
+    width: 100%;
+    border-top: 1px solid rgba(120, 120, 120, 0.2);
+  }
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] > ul > li > a,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul li a,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul li:first-child > a,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul li:last-child > a {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+  }
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul li a {
+    padding-left: 12.5px;
+  }
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul li a {
+    padding: 14px 25px 14px 27.5px;
+  }
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul ul li a {
+    padding-left: 42.5px;
+  }
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul ul ul li a {
+    padding-left: 57.5px;
+  }
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] > ul > li.has-sub > a:after,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] > ul > li.has-sub > a:before,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul li.has-sub > a:after,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul li.has-sub > a:before {
+    display: none;
+  }
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] #menu-button {
+    position: relative;
+    display: block;
+    padding: 20px;
+    padding-left: 12.5px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #ffffff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] .submenu-button {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 53px;
+    height: 53px;
+    border-left: 1px solid rgba(120, 120, 120, 0.2);
+    z-index: 10;
+    cursor: pointer;
+  }
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul .submenu-button {
+    height: 41px;
+  }
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul .submenu-button:after,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] #menu-button:after {
+    content: '';
+    position: absolute;
+    right: 12.5px;
+    top: 12.5px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 15px;
+    background: #3db2e1;
+    background: -webkit-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+    background: -ms-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+    background: -moz-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+    background: -o-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+    background: linear-gradient(to bottom, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+    box-shadow: inset 0 -1px 1px #209ed0, inset 0 2px 1px #7fcceb;
+    background-size: 56px 56px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+  }
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul .submenu-button.submenu-opened:after,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] #menu-button.menu-opened:after {
+    background-position: 0 -28px;
+  }
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul .submenu-button:after {
+    top: 6.5px;
+  }
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] #menu-button:before,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] .submenu-button:before {
+    content: '';
+    position: absolute;
+    right: 22.5px;
+    top: 25.5px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    z-index: 99;
+  }
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] ul ul .submenu-button:before {
+    top: 19.5px;
+  }
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] #menu-button.menu-opened:before,
+  div#topNav.SFPUCNavigation div[id$="_TopNavigationMenu"] .submenu-button.submenu-opened:before {
+    border-top-color: #19799f;
+  }
+}*/
 
 /* Container for search field and go button */
-
 #searchInputBox {
 	width: 300px;
 }
@@ -591,24 +676,25 @@ div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static.align-right ul ul > l
 	border: 0;
 }
 #SearchBox {
-    padding: 0 0 0 20px !important;
-    height:25px;
-    width: 300px;
-    margin:0;
+
+    height: 25px;
+    width: 260px;
+	padding-left: 10px;
+    margin-bottom: 10px;
     border: 0 solid #000000;
     float: left;
     font-size: 11px !important;
     line-height: 25px !important;
 	background-color: #edf4fe;
     background: url("../img/search_bg.gif") 0 0 no-repeat;
-	border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
+	border-radius: 12.5px;
+    -webkit-border-radius: 12.5px;
+    -moz-border-radius: 12.5px;
     color:#b1b1b2;
 }
-#ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_SearchLink,
+[id$="_PlaceHolderSearchArea_SmallSearchInputBox1_csr_SearchLink"],
 .searchbox_button {
-	float: left;
+	float: right;
 }
 
 /*ITS Page Layout Styles */
@@ -616,6 +702,7 @@ div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static.align-right ul ul > l
 	width: 20%;
 	height: 100%;
 	float: left;
+	padding: 0.2em;
 	box-shadow: 0 1px 1px #B6B7B7;
 	-webkit-box-shadow: 0 1px 1px #B6B7B7;
 	-moz-box-shadow: 0 1px 1px #B6B7B7;
@@ -626,6 +713,7 @@ div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static.align-right ul ul > l
 	width: 57%;
 	height: 100%;
 	margin: 0 auto;
+	padding: 0.2em;
 	box-shadow: 0 1px 1px #B6B7B7;
 	-webkit-box-shadow: 0 1px 1px #B6B7B7;
 	-moz-box-shadow: 0 1px 1px #B6B7B7;
@@ -646,7 +734,7 @@ div#topNav.SFPUCNavigation ul#zz13_RootAspMenu > li.static.align-right ul ul > l
     padding: 0;
     margin: 0;
 }
-#s4-bodyContainer {
+#s4-bodyContainer, footer {
 	width: auto;
 }
 /* Styles to stick footer to bottom */
@@ -683,19 +771,14 @@ div#titleAreaBox {
 }
 div#DeltaTopNavigation {
     position: absolute;
-    top: 76px;
+    top: 78px;
 	margin-left: -300px;
-	width: 100%;
-}
-div[id$="_TopNavigationMenu"] {
-	width: 100%;
-}
-ul[id$="_RootAspMenu"] {
-	width: 86.56%;
+	width: 86.6%;
 }
 div.real-breadcrumb {
     font-weight: bold;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

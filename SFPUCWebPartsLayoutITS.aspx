@@ -21,22 +21,16 @@
 	<SharePointWebControls:ProjectProperty Property="Description" runat="server"/>
 </asp:Content>
 
-<asp:Content ContentPlaceHolderId="PlaceHolderBodyRightMargin" runat="server">
-	<div height=100% class="ms-pagemargin"><IMG SRC="/_layouts/images/blank.gif" width=10 height=1 alt=""></div>
-</asp:Content>
 <asp:Content ContentPlaceHolderId="PlaceHolderMain" runat="server">
+
 	<div class="welcome blank-wp">
-		<div class="ITSContentWraper">
-			<div class="ITSleftColumnWraper">
-				<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_Left%>" ID="LeftColumn" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-			</div>		
-			<div class="ITSrightColumnWraper">
-				<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_Center%>" ID="CenterColumn" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>		
-			</div>
-			<div class="ITSmainContentWraper">
-				<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_Right%>" ID="RightColumn" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>				
-			</div>
+		
+		<div class="clearfix ITSContentWraper ">
+			<div class="ITSleftColumnWraper"><WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_Left%>" ID="LeftColumn" Width="90%" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>></div>		
+			<div class="ITSrightColumnWraper"><WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_Right%>" ID="RightColumn" Width="90%" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone></div>
+			<div class="ITSmainContentWraper"><WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_Center%>" ID="CenterColumn" /></div>
 		</div>
-		<SharePointWebControls:ScriptBlock runat="server">if(typeof(MSOLayout_MakeInvisibleIfEmpty) == "function") {MSOLayout_MakeInvisibleIfEmpty();}</SharePointWebControls:ScriptBlock>
+			<SharePointWebControls:ScriptBlock runat="server">if(typeof(MSOLayout_MakeInvisibleIfEmpty) == "function") {MSOLayout_MakeInvisibleIfEmpty();}</SharePointWebControls:ScriptBlock>
 	</div>
+
 </asp:Content>
