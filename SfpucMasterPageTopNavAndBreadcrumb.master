@@ -1,10 +1,4 @@
-<%-- SPG:
 
-This HTML file has been associated with a SharePoint Master Page (.master file) carrying the same name.  While the files remain associated, you will not be allowed to edit the .master file, and any rename, move, or deletion operations will be reciprocated.
-
-To build the master page directly from this HTML file, simply edit the page as you normally would.  Use the Snippet Generator at http://uvo1dvyuvjvtd0ufmjn.env.cloudshare.com/sites/SFPUC/_layouts/15/ComponentHome.aspx?Url=http%3A%2F%2Fuvo1dvyuvjvtd0ufmjn%2Eenv%2Ecloudshare%2Ecom%2Fsites%2FSFPUC%2F%5Fcatalogs%2Fmasterpage%2FSFPUC%2FSfpucMasterPageTopNavAndBreadcrumb%2Emaster to create and customize useful SharePoint entities, then copy and paste them as HTML snippets into your HTML code.   All updates to this file will automatically sync to the associated Master Page.
-
- --%>
 <%@Master language="C#"%>
 <%@Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>
 <%@Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>
@@ -16,20 +10,16 @@ To build the master page directly from this HTML file, simply edit the page as y
 <PageFieldTextField:SPHtmlTag class="no-js" lang="en" runat="server" id="SPHtmlTag" dir="&lt;%$Resources:wss,multipages_direction_dir_value%&gt;">
     <head runat="server">
         <meta http-equiv="X-UA-Compatible" content="IE=10" />
-        
-        
-        
-        
         <meta name="GENERATOR" content="Microsoft SharePoint" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
         <meta http-equiv="Expires" content="0" />
         <SharePoint:RobotsMetaTag runat="server">
         </SharePoint:RobotsMetaTag>
-		 <SharePoint:PageTitle runat="server">
+        <SharePoint:PageTitle runat="server">
             <asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server">
-            <SharePoint:ProjectProperty Property="Title" runat="server">
-			</SharePoint:ProjectProperty>
-		</asp:ContentPlaceHolder>
+                <SharePoint:ProjectProperty Property="Title" runat="server">
+                </SharePoint:ProjectProperty>
+            </asp:ContentPlaceHolder>
         </SharePoint:PageTitle>
         <SharePoint:StartScript runat="server">
         </SharePoint:StartScript>
@@ -67,29 +57,31 @@ To build the master page directly from this HTML file, simply edit the page as y
             <WebPartPages:SPWebPartManager runat="server">
             </WebPartPages:SPWebPartManager>
         </SharePoint:AjaxDelta>
-        
+       
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         
         <meta name="description" content="San Francisco Public Utilities Commission Site" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="apple-touch-icon" href="/sites/SFPUC/_catalogs/masterpage/SFPUC/img/SFPUCico.ICO" />
-        <link rel="icon" href="/sites/SFPUC/_catalogs/masterpage/SFPUC/img/favicon.ico" />
-        <link rel="stylesheet" href="/sites/SFPUC/_catalogs/masterpage/SFPUC/css/normalize.css" />
-        <link rel="stylesheet" href="/sites/SFPUC/_catalogs/masterpage/SFPUC/css/main.css" />
-        <script src="/sites/SFPUC/_catalogs/masterpage/SFPUC/js/vendor/modernizr-2.8.3.min.js">//<![CDATA[
+        <link rel="apple-touch-icon" href="/_catalogs/masterpage/SFPUC/img/SFPUCico.ICO" />
+        <link rel="icon" href="/sites/Branding/_catalogs/masterpage/sfpuc/img/favicon.ico" />
+        <link rel="stylesheet" href="/sites/Branding/_catalogs/masterpage/sfpuc/css/normalize.css" />
+        <link rel="stylesheet" href="/sites/Branding/_catalogs/masterpage/sfpuc/css/main.css" />
+        <script src="/sites/Branding/_catalogs/masterpage/sfpuc/js/vendor/modernizr-2.8.3.min.js">
+		//<![CDATA[
 
-    
-    
-        
-        
-        //]]></script>
-        
+		
+        //]]></script>    
     </head>
-    <body onhashchange="if (typeof(_spBodyOnHashChange) != 'undefined') _spBodyOnHashChange();"><PageFieldTextField:SPClientIDGenerator runat="server" ServerControlID="DeltaPlaceHolderMain;DeltaPlaceHolderPageTitleInTitleArea;DeltaPlaceHolderUtilityContent" /><PageFieldTextField:ImageLink runat="server" /><PageFieldTextField:SharePointForm onsubmit="if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;}" runat="server"><asp:ScriptManager id="ScriptManager" runat="server" EnablePageMethods="false" EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true" />
-        
-        
-        
+    <body onhashchange="if (typeof(_spBodyOnHashChange) != 'undefined') _spBodyOnHashChange();">
+	<PageFieldTextField:SPClientIDGenerator runat="server" ServerControlID="DeltaPlaceHolderMain;DeltaPlaceHolderPageTitleInTitleArea;DeltaPlaceHolderUtilityContent"/>
+	<PageFieldTextField:ImageLink runat="server"/>
+	<PageFieldTextField:SharePointForm onsubmit="if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;}" runat="server" __designer:Preview="&lt;table cellpadding=4 cellspacing=0 style=&quot;font:messagebox;color:buttontext;background-color:buttonface;border: solid 1px;border-top-color:buttonhighlight;border-left-color:buttonhighlight;border-bottom-color:buttonshadow;border-right-color:buttonshadow&quot;&gt;
+              &lt;tr&gt;&lt;td nowrap&gt;&lt;span style=&quot;font-weight:bold&quot;&gt;SharePointForm&lt;/span&gt; - Unnamed3&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;
+            &lt;/table&gt;" __designer:Values="&lt;P N=&#39;Method&#39; T=&#39;post&#39; /&gt;&lt;P N=&#39;Name&#39; ID=&#39;1&#39; T=&#39;aspnetForm&#39; /&gt;&lt;P N=&#39;TagName&#39; T=&#39;form&#39; /&gt;&lt;P N=&#39;ID&#39; T=&#39;ctl02&#39; /&gt;&lt;P N=&#39;Page&#39; ID=&#39;2&#39; /&gt;&lt;P N=&#39;TemplateControl&#39; ID=&#39;3&#39; /&gt;&lt;P N=&#39;AppRelativeTemplateSourceDirectory&#39; R=&#39;-1&#39; /&gt;">
+	<asp:ScriptManager id="ScriptManager" runat="server" EnablePageMethods="false" EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true" />
+               
         <SharePoint:SPSecurityTrimmedControl runat="server" HideFromSearchCrawler="true" EmitDiv="true">
             <div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">
                 <a id="linkTurnOnAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">
@@ -124,7 +116,7 @@ To build the master page directly from this HTML file, simply edit the page as y
                                     
                                     <SharePoint:AjaxDelta id="DeltaSiteLogo" BlockElement="true" runat="server">
                                         <SharePoint:SPSimpleSiteLink CssClass="ms-siteicon-a" runat="server" id="onetidProjectPropertyTitleGraphic">
-                                            <SharePoint:SiteLogoImage CssClass="ms-siteicon-img SFPUCLogo" name="onetidHeadbnnr0" id="onetidHeadbnnr2" LogoImageUrl="/sites/SFPUC/_catalogs/masterpage/SFPUC/img/logo300-75.jpg" runat="server">
+                                            <SharePoint:SiteLogoImage CssClass="ms-siteicon-img SFPUCLogo" name="onetidHeadbnnr0" id="onetidHeadbnnr2" LogoImageUrl="/sites/Branding/_catalogs/masterpage/sfpuc/img/logo300-75.jpg" runat="server">
                                                 
                                             </SharePoint:SiteLogoImage>
                                         </SharePoint:SPSimpleSiteLink>
@@ -132,16 +124,18 @@ To build the master page directly from this HTML file, simply edit the page as y
                                     
                                 </div>
                                 <div class="ms-breadcrumb-box ms-tableCell ms-verticalAlignTop">
-                                    
                                     <div id="topNav" class="SFPUCNavigation">
                                         <div class="ms-breadcrumb-top">
-                                            <div data-name="Page Field: Title"><h1 class="SFPUCPageTitle" id="pageTitle">
-											
-											<PageFieldTextField:TextField runat="server" DisableInputFieldLabel="True" FieldName="fa564e0f-0c70-4ab9-b863-0177e6ddd247">
-											
-											</PageFieldTextField:TextField>
-											
-											</h1></div>
+                                            <div data-name="Page Field: Title">
+                                                <h1 class="SFPUCPageTitle" id="pageTitle">
+                                                    
+                                                    
+                                                    <PageFieldTextField:TextField runat="server" DisableInputFieldLabel="True" FieldName="fa564e0f-0c70-4ab9-b863-0177e6ddd247">
+                                                        
+                                                    </PageFieldTextField:TextField>
+                                                    
+                                                </h1>
+                                            </div>
                                             <SharePoint:AjaxDelta id="DeltaTopNavigation" BlockElement="true" CssClass="ms-displayInline" runat="server">
                                             <SharePoint:DelegateControl runat="server" ControlId="TopNavigationDataSource" Id="topNavigationDelegate">
                                             <Template_Controls>
@@ -151,19 +145,19 @@ To build the master page directly from this HTML file, simply edit the page as y
                                             <a name="startNavigation">
                                             </a>
                                             <asp:ContentPlaceHolder id="PlaceHolderTopNavBar" runat="server">
-                                            <SharePoint:AspMenu ID="TopNavigationMenu" Runat="server" RenderingMode="List" EnableViewState="false" DataSourceID="topSiteMap" AccessKey="&lt;%$Resources:wss,navigation_accesskey%&gt;" UseSimpleRendering="false" UseSeparateCss="false" Orientation="Horizontal" StaticDisplayLevels="2" AdjustForShowStartingNode="true" MaximumDynamicDisplayLevels="3" SkipLinkText="" />
+											<SharePoint:AspMenu ID="TopNavigationMenu" Runat="server" RenderingMode="List" EnableViewState="false" DataSourceID="topSiteMap" AccessKey="&lt;%$Resources:wss,navigation_accesskey%&gt;" UseSimpleRendering="false" UseSeparateCss="false" Orientation="Horizontal" StaticDisplayLevels="2" AdjustForShowStartingNode="true" MaximumDynamicDisplayLevels="3" SkipLinkText="" />
                                             
                                             </asp:ContentPlaceHolder>
                                             </SharePoint:AjaxDelta>
                                         </div>
                                     </div>
                                 </div>
-								        <asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">
-            <div id="searchInputBox">
-                <SharePoint:DelegateControl runat="server" ControlId="SmallSearchInputBox" />
-                
-            </div>
-        </asp:ContentPlaceHolder>
+                                <asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">
+									<div id="searchInputBox">
+                                        <SharePoint:DelegateControl runat="server" ControlId="SmallSearchInputBox" />
+                                        
+                                    </div>
+                                </asp:ContentPlaceHolder>
                             </div>
                         </div>
                     </div>
@@ -195,47 +189,56 @@ To build the master page directly from this HTML file, simply edit the page as y
                             </div>
                         </div>
                         <footer>
-                            <p>The San Francisco Public Utilities Commission provides retail drinking water and wastewater services to
-                the City, wholesale water to three Bay Area counties, and green hydroelectric and solar power to our
-                municipal departments.
-            
-                            
-                            
-                            </p>
+                            <div class="footerContent">
+								<p>© Copyright San Francisco Public Utilities Commission</p>
+							</div>
                         </footer>
                         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">//<![CDATA[
 
-
-        
-        
-                        
-                        
                         //]]></script>
                         <script>//<![CDATA[window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js">//<![CDATA[<\/script>')
 
+                        //]]></script>
+                        <script src="/sites/Branding/_catalogs/masterpage/sfpuc/js/plugins.js">//<![CDATA[
 
-        
-        
-                        
                         
                         //]]></script>
-                        <script src="/sites/SFPUC/_catalogs/masterpage/SFPUC/js/plugins.js">//<![CDATA[
+                        <script src="/sites/Branding/_catalogs/masterpage/sfpuc/js/main.js">//<![CDATA[
 
-
-        
-        
-                        
-                        
-                        //]]></script>
-                        <script src="/sites/SFPUC/_catalogs/masterpage/SFPUC/js/main.js">//<![CDATA[
-
-
-        
-        
-                        
                         
                         //]]></script>
                     </div>
                 </div>
-            <PageFieldTextField:AjaxDelta id="DeltaFormDigest" BlockElement="true" runat="server"><asp:ContentPlaceHolder id="PlaceHolderFormDigest" runat="server"><PageFieldTextField:formdigest runat="server" /></asp:ContentPlaceHolder></PageFieldTextField:AjaxDelta></PageFieldTextField:SharePointForm><PageFieldTextField:AjaxDelta id="DeltaPlaceHolderUtilityContent" runat="server"><asp:ContentPlaceHolder id="PlaceHolderUtilityContent" runat="server" /></PageFieldTextField:AjaxDelta><asp:ContentPlaceHolder id="PlaceHolderTitleAreaClass" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleBreadcrumb" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderGlobalNavigationSiteMap" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderGlobalNavigation" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBar" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderHorizontalNav" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBarDataSource" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderCalendarNavigator" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftActions" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBarTop" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderSiteName" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderPageDescription" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderPageImage" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleLeftBorder" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderMiniConsole" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleRightMargin" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleAreaSeparator" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderNavSpacer" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBarBorder" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderBodyLeftBorder" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderBodyRightMargin" Visible="False" runat="server" /><asp:ContentPlaceHolder id="WSSDesignConsole" Visible="False" runat="server" /><asp:ContentPlaceHolder id="SPNavigation" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderQuickLaunchTop" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderQuickLaunchBottom" Visible="False" runat="server" /></body>
+            <PageFieldTextField:AjaxDelta id="DeltaFormDigest" BlockElement="true" runat="server">
+			<asp:ContentPlaceHolder id="PlaceHolderFormDigest" runat="server"><PageFieldTextField:formdigest runat="server" />
+			</asp:ContentPlaceHolder></PageFieldTextField:AjaxDelta></PageFieldTextField:SharePointForm>
+			<PageFieldTextField:AjaxDelta id="DeltaPlaceHolderUtilityContent" runat="server">
+			<asp:ContentPlaceHolder id="PlaceHolderUtilityContent" runat="server" />
+			</PageFieldTextField:AjaxDelta><asp:ContentPlaceHolder id="PlaceHolderTitleAreaClass" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderTitleBreadcrumb" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderGlobalNavigationSiteMap" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderGlobalNavigation" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderLeftNavBar" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderHorizontalNav" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderLeftNavBarDataSource" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderCalendarNavigator" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderLeftActions" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderLeftNavBarTop" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderSiteName" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderPageDescription" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderPageImage" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderTitleLeftBorder" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderMiniConsole" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderTitleRightMargin" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderTitleAreaSeparator" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderNavSpacer" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderLeftNavBarBorder" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderBodyLeftBorder" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderBodyRightMargin" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="WSSDesignConsole" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="SPNavigation" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderQuickLaunchTop" Visible="False" runat="server" />
+			<asp:ContentPlaceHolder id="PlaceHolderQuickLaunchBottom" Visible="False" runat="server" />
+			</body>
         </PageFieldTextField:SPHtmlTag>
