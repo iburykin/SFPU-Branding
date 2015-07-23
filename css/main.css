@@ -353,7 +353,7 @@ span.SFPUCimageBckg {
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
 	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);	
 	box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-	padding: 0.2em 0.2em 0.2em 2em;
+	padding: 0.5em 2em;
 	margin: 0;
 	border: 1px solid #27AAE1;
 	border-radius: 2px;
@@ -866,7 +866,7 @@ div[id$="_ChromeTitle"].ms-webpart-chrome-title {
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
 	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-	padding: 0.5em 2em 0.5em 2em;
+	padding: 0.5em 2em;
 	margin: 0;
 	border: 1px solid #27AAE1;
 	border-radius: 2px;
