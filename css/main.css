@@ -356,9 +356,9 @@ span.SFPUCimageBckg {
 	padding: 0.5em 2em;
 	margin: 0;
 	border: 1px solid #27AAE1;
-	border-radius: 2px;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;	
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;	
 }
 
 /* Top Navigation */
@@ -869,9 +869,15 @@ div[id$="_ChromeTitle"].ms-webpart-chrome-title {
 	padding: 0.5em 2em;
 	margin: 0;
 	border: 1px solid #27AAE1;
-	border-radius: 2px;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-bottom-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-bottom-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
 }
 .ms-webpart-titleText.ms-webpart-titleText, .ms-webpart-titleText > a, div[id$="_ChromeTitle"].ms-webpart-chrome-title a {
 	color: #FFFFFF;

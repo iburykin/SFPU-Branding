@@ -133,6 +133,7 @@
 }
 #cssmenu li:hover > ul {
   left: auto;
+  z-index: 100;
 }
 #cssmenu.align-right li:hover > ul {
   right: 0;

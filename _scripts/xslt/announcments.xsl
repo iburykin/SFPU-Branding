@@ -15,33 +15,123 @@
 	<xsl:call-template name="html.tools"/>
 	<div class="announcements">
 	    <xsl:for-each select="$Rows">
-			<div class="announcement-item">
+			<div class="announcement-item">				
 			    <div class="announcement-title">
+			    	<span class="date"><xsl:value-of select="@Date"/></span>:
 			    	<a>
 			    		<xsl:attribute name="onclick">
 							EditLink2(this,41);return false;
 						</xsl:attribute>
-			    		<xsl:attribute name="href">../Lists/Announcements/DispForm.aspx?ID=<xsl:value-of select="@Title"/></xsl:attribute>
+			    		<xsl:attribute name="href">../Lists/Announcements/DispForm.aspx?ID=<xsl:value-of select="@ID"/></xsl:attribute>
 						<xsl:value-of select="@Title"/>
 					</a>
 				</div>
-			    <div class="announcement-desc"><span class="date"><xsl:value-of select="@Date"/></span>
-			    <p><xsl:value-of select="@Announcement" disable-output-escaping="yes"/></p>
+			    <div class="announcement-desc">
+
+				    <xsl:variable name="Announcement" select="@Announcement" />
+				    
+				    
+				    <xsl:call-template name="remove-html">
+	    				<xsl:with-param name="text" select="$Announcement"/>
+					</xsl:call-template>
+					
+					 <xsl:choose>				 
+				        <xsl:when test="contains($Announcement, '&lt;')">			        
+				            <xsl:variable name="AnnouncementPreview" select="substring-before($Announcement, '&lt;')" />
+				            <xsl:value-of select="$AnnouncementPreview" />
+				        </xsl:when>
+				        <xsl:otherwise>
+				            <xsl:value-of select="$Announcement" />
+				        </xsl:otherwise>
+				    </xsl:choose>			  													    
 			    </div>
 			</div>
+			<hr />
 		</xsl:for-each>
-	    <div class="more"><a href="../Lists/Announcements">More...</a></div>
+	    
     </div>
+    <div class="more"><a href="../Lists/Announcements">More Events</a></div>
     
+</xsl:template>
+
+
+<!-- This will remove the tag -->
+
+<xsl:template name="remove-html">
+    <xsl:param name="text"/>
+    <xsl:choose>
+        <xsl:when test="contains($text, '&lt;')">
+            <xsl:value-of select="substring-before($text, '&lt;')"/>
+            <xsl:call-template name="remove-html">
+                    <xsl:with-param name="text" select="substring-after($text, '&gt;')"/>
+            </xsl:call-template>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:value-of select="$text"/>
+        </xsl:otherwise>
+    </xsl:choose>
+   
 </xsl:template>
 
 <xsl:template name="html.tools">
 	<style>
 	.announcements {
-		width: 100%;
-		margin: 0;
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 1em;
 		padding: 1em 0.5em;
+		background: #ffffff;
+		height: 200px;
+		overflow-y: scroll;
+		white-space: normal;
+    	word-break: break-word;
 	}
+	.announcement-title {
+		color: #000000;
+		font-weight: bold;
+		float: left;
+	}
+	.more {
+		float: right;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		margin-right: 2em;
+		display: block;
+		background: #27a9e1;
+	    background: -o-linear-gradient(top, #27a9e1,  #0077be);
+	    background: -ms-linear-gradient(top, #27a9e1,  #0077be);
+	    background: -webkit-linear-gradient(top, #27a9e1,  #0077be);
+	    background: -moz-linear-gradient(top, #27a9e1,  #0077be);
+	    background: linear-gradient(to bottom, #27a9e1,  #0077be);
+		color: #FFFFFF;
+		font-size: 11pt;
+		font-weight: bold;
+		-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+		-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);	
+		box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+		padding: 0.5em 1em;
+		border: 1px solid #27a9e1;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+	}
+	.more a {
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+	
   	</style>
+  	<script>
+  	( function( $ ) {
+      $( document ).ready(function() {
+	      $("div.announcement-desc").each(function( index ) {
+	      	var announcement = $(this).text();
+	      	if ( announcement.length > 200 ) {		      	
+		      	$(this).text(announcement.substr(0, 200) + '...');
+		      }
+		   });
+      });
+      } )( jQuery );
+    </script>
 </xsl:template>
 </xsl:stylesheet>
