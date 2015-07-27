@@ -18,13 +18,7 @@
 			<div class="announcement-item">				
 			    <div class="announcement-title">
 			    	<span class="date"><xsl:value-of select="@Date"/></span>:
-			    	<a>
-			    		<xsl:attribute name="onclick">
-							EditLink2(this,41);return false;
-						</xsl:attribute>
-			    		<xsl:attribute name="href">../Lists/Announcements/DispForm.aspx?ID=<xsl:value-of select="@ID"/></xsl:attribute>
-						<xsl:value-of select="@Title"/>
-					</a>
+			    	<xsl:value-of select="@Title"/>
 				</div>
 			    <div class="announcement-desc">
 
@@ -38,10 +32,22 @@
 					 <xsl:choose>				 
 				        <xsl:when test="contains($Announcement, '&lt;')">			        
 				            <xsl:variable name="AnnouncementPreview" select="substring-before($Announcement, '&lt;')" />
-				            <xsl:value-of select="$AnnouncementPreview" />
+				            <a>
+					    		<xsl:attribute name="onclick">
+									EditLink2(this,41);return false;
+								</xsl:attribute>
+					    		<xsl:attribute name="href">../Lists/Announcements/DispForm.aspx?ID=<xsl:value-of select="@ID"/></xsl:attribute>
+								<xsl:value-of select="$AnnouncementPreview" />
+							</a>
 				        </xsl:when>
 				        <xsl:otherwise>
-				            <xsl:value-of select="$Announcement" />
+				        	<a>
+					    		<xsl:attribute name="onclick">
+									EditLink2(this,41);return false;
+								</xsl:attribute>
+					    		<xsl:attribute name="href">../Lists/Announcements/DispForm.aspx?ID=<xsl:value-of select="@ID"/></xsl:attribute>
+								<xsl:value-of select="$Announcement" />
+							</a>				            
 				        </xsl:otherwise>
 				    </xsl:choose>			  													    
 			    </div>
@@ -126,8 +132,9 @@
       $( document ).ready(function() {
 	      $("div.announcement-desc").each(function( index ) {
 	      	var announcement = $(this).text();
-	      	if ( announcement.length > 200 ) {		      	
-		      	$(this).text(announcement.substr(0, 200) + '...');
+	      	if ( announcement.length > 200 ) {		
+	      		$(this).text('');    	
+		      	$(this).append('<br /><a href="#">' + announcement.substr(0, 200) + '</a>' + '...');
 		      }
 		   });
       });
