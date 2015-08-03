@@ -133,7 +133,6 @@
 }
 #cssmenu li:hover > ul {
   left: auto;
-  z-index: 100;
 }
 #cssmenu.align-right li:hover > ul {
   right: 0;
@@ -197,7 +196,7 @@
 #cssmenu ul ul li.has-sub:hover > a::after {
   border-color: #ffffff;
 }
-@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+/*@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu {
     width: 100%;
   }
@@ -320,4 +319,26 @@
   #cssmenu .submenu-button.submenu-opened:after {
     display: none;
   }
+}*/
+
+
+/* vertical scroll added */
+cssmenu {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+ul.scroll {
+  text-align: justify;
+  width: 78.3em; /*** set the width to a value larger than the sum of all the li's width ***/
+}
+ul.scroll:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+ul.second-level-item {
+  text-align: left;
+}
+li {
+  display: inline-block;
 }
