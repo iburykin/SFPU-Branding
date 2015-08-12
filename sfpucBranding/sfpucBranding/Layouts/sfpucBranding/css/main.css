@@ -1,0 +1,1067 @@
+﻿/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1;
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+}
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("MyriadProRegular.eot");
+    src: url("MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("MyriadProRegular.woff") format("woff"),
+    url("MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "GothamProRegular"; */
+@font-face {
+    font-family: "GothamProRegular";
+    src: url("GothamProRegular.eot");
+    src: url("GothamProRegular.eot?#iefix")format("embedded-opentype"),
+    url("GothamProRegular.woff") format("woff"),
+    url("GothamProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* Simple tags styles */
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+    background-color: #FFFFFF;
+	width: 100%;
+	min-width: 1024px;
+    color: #222;
+    font-family: MyriadProRegular, Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 10pt;
+    padding: 0;
+    margin: 0 auto;
+}
+a {
+    color: #0076BD;
+    text-shadow: 0 0 1px #B6B7B7;
+    text-decoration: none;	
+}
+a:hover, a:active {
+	color: #27AAE1;
+}
+h1 {
+    font-family: GothamProRegular, Arial, "Lucida Grande", sans-serif;
+    font-size: 30pt;
+    color: #000000;
+    margin: 0;
+	padding: 0.5em 0.1em 0.1em 0.5em;
+	line-height: 0;
+	text-transform: uppercase;
+}
+p,
+h2,
+h3 {
+	orphans: 3;
+	widows: 3;
+	font-size: 1em;
+	font-family: MyriadProRegular. Arial, "Lucida Grande", sans-serif;
+	color: #424242;
+	padding: 0;
+	margin: 0;
+}
+p{
+	padding: 0.2em 0.2em 0.2em 0.65em;
+	line-height: 1;
+}
+h2,
+h3{
+	font-family: MyriadProRegular, Arial, "Lucida Grande", sans-serif;
+	page-break-after: avoid;
+	font-size: 1.4em;
+	color: #27AAE1;
+}
+h3{
+	font-size: 1.25em;
+}
+header {
+    height: 111px;
+    width: 87%;
+    margin: 0 auto;
+	padding: 0;
+}
+footer {
+    height: 170px;
+    width: 100%;
+    background: url("../img/footer.png") left no-repeat;
+	text-align: right;
+	position: relative;
+}
+footer .footerContent{
+	padding-bottom: 1em;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+footer p {
+    font-size: 0.8em;
+    margin-left: 1em;
+	margin-right: 1em;
+    color: #666666;
+	text-align: right;
+}
+.aside {
+	float: right;
+	margin: 0;
+	padding: 0.2em 0.5em 0.2em;
+	width: 23%;
+	height: 100%;
+	box-shadow: 0 1px 1px #B6B7B7;
+    -webkit-box-shadow: 0 1px 1px #B6B7B7;
+    -moz-box-shadow: 0 1px 1px #B6B7B7;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: solid 0 #B6B7B7;
+}
+article {
+	float: left;
+	width: auto;
+	padding: 0;
+	margin: 0.1em 0;
+    box-shadow: 0 1px 1px #B6B7B7;
+    -webkit-box-shadow: 0 1px 1px #B6B7B7;
+    -moz-box-shadow: 0 1px 1px #B6B7B7;
+    background-color: #FFFFFF;
+    border: solid 0 #B6B7B7;
+}
+article .titleH3{
+	border-bottom-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-bottom-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+}
+article p{
+	padding-top: 1.4em;
+	padding-bottom: 1.2em;
+}
+
+/* Layout div classes and id's */
+
+.topLogoAndPageTitle {
+    width: 100%;
+	background: url("../img/topbar.png") right no-repeat;
+    height: 64px;
+	padding: 0;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+.titleAreaRow {
+	background-image:  linear-gradient(left , rgba(0,0,0,0.2) 4%, rgba(255,255,255,0.2) 73%);
+	background-image: -o-linear-gradient(left , rgba(0,0,0,0.2) 4%, rgba(255,255,255,0.2) 73%);
+	background-image: -moz-linear-gradient(left , rgba(0,0,0,0.2) 4%, rgba(255,255,255,0.2) 73%);
+	background-image: -webkit-linear-gradient(left , rgba(0,0,0,0.2) 4%, rgba(255,255,255,0.2) 73%);
+	background-image: -ms-linear-gradient(left , rgba(0,0,0,0.2) 4%, rgba(255,255,255,0.2) 73%);
+}
+img#ctl00_onetidHeadbnnr2.ms-siteicon-img.SFPUCLogo{
+	max-width: 300px;
+	max-height: 75px;
+    margin-top: 0.2em;
+    display: block;
+    opacity: 0.9;
+ }
+.SFPUCPageTitle {
+    width: auto;
+    float: left;
+    height: 64px;
+	vertical-align: middle;
+	margin:0;
+    padding: 2em 1em 0 0.2em;
+}
+.contentWraper {
+	min-height: 100%;
+    padding: 1em 0.5em;
+    margin: 1em auto;	
+    width: 85%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 0 7px 7px 0 rgba(0,0,0,0.47);
+    -webkit-box-shadow: 0 7px 7px 0 rgba(0,0,0,0.47);
+    -moz-box-shadow: 0 7px 7px 0 rgba(0,0,0,0.47);
+    background-color: rgba(182, 183, 183, 0.3);
+    border: solid 0 #B6B7B7;
+}
+.mainContentLeft {
+	width: 70%;
+	height: 100%;
+	float: left;
+	padding: 0.2em 0.5em 0.2em;
+	box-shadow: 0 1px 1px #B6B7B7;
+    -webkit-box-shadow: 0 1px 1px #B6B7B7;
+    -moz-box-shadow: 0 1px 1px #B6B7B7;
+    background-color: rgba(255, 255, 255, 0.3);
+	border: solid 0 #B6B7B7;
+}
+.mainRowContentDiv {
+    width: auto;
+    margin: 0 auto;
+}
+.bottom {
+    text-align: center;
+}
+span.SFPUCimageBckg {
+	background: url("../img/SFPUCico.ico") no-repeat;
+	height: 1em;
+	width: auto;
+}
+.mainContent {
+    padding: 0.5em;
+	padding-top: 0;
+    float: left;
+    width: 98%;
+    min-height: 100%;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+}
+.mainRowContentTable {
+	padding: 0.3em 0.2em;
+	margin: 0;
+}
+.mainContentP {
+    border-left: 3px #b1b1b2 solid;
+    padding-left: 0.7em;
+    padding-top: 0.5em;
+    padding-bottom: 0.7em;
+    padding-right: 0.3em;
+    height: auto;
+	margin-left: 10px;
+}
+.mainRowContentP {
+    margin: 0 1em 0;
+    padding: 0.2em;	
+}
+
+/* Headers customization */
+.titleH3, .titleH2{
+	display: block;
+	background: #27a9e1;
+    background: -o-linear-gradient(top, #27a9e1,  #0077be);
+    background: -ms-linear-gradient(top, #27a9e1,  #0077be);
+    background: -webkit-linear-gradient(top, #27a9e1,  #0077be);
+    background: -moz-linear-gradient(top, #27a9e1,  #0077be);
+    background: linear-gradient(to bottom, #27a9e1,  #0077be);
+	color: #FFFFFF;
+	font-size: 12pt;
+	font-weight: bold;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);	
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	padding: 0.5em 2em;
+	margin: 0;
+	border: 1px solid #27AAE1;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;	
+}
+
+/* Top Navigation */
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu,
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul,
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul li,
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul li a,
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div[id$="_TopNavigationMenu"] a.popout {
+     background-image: url("/_layouts/15/images/menu-down.gif?rev=23") !important;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu:after,
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;	
+  height: 0;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu #menu-button {
+  display: none;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu {
+  width: 100%;
+  border-radius: 5px;  
+  background: #3db2e1;
+  background: -o-linear-gradient(top, #FFFFFF,  #B6B7B7);
+  background: -ms-linear-gradient(top, #FFFFFF,  #B6B7B7);
+  background: -webkit-linear-gradient(top, #FFFFFF,  #B6B7B7);
+  background: -moz-linear-gradient(top, #FFFFFF,  #B6B7B7);
+  background: linear-gradient(to bottom, #FFFFFF,  #B6B7B7);
+  box-shadow: inset 0 -3px 0 #B6B7B7, inset 0 -3px 3px #B6B7B7, inset 0 2px 2px #FFFFFF, inset 1px 0 2px #FFFFFF, inset -1px 0 2px #FFFFFF;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-center ul ul {
+  text-align: left;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right > ul > li {
+  float: right;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul {
+  text-align: right;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li {
+  float: left;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li > a {
+  padding: 10px 15px;
+  font-size: 13px;
+  color: #666666;
+ /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: color .1s ease;
+  -moz-transition: color .1s ease;
+  -ms-transition: color .1s ease;
+  -o-transition: color .1s ease;
+  transition: color .1s ease;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li:hover > a,
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li > a:hover,
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li.active > a {
+  color: #B6B7B7;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li.has-sub > a {
+  padding-right: 40px;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul > li.has-sub > a:after {
+  content: '';
+  position: absolute;
+  right: 5px;
+  top: 17.5px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  background: #3db2e1;
+  background: -webkit-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  background: -ms-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  background: -moz-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  background: -o-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  background: linear-gradient(to bottom, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  box-shadow: inset 0 -1px 1px #209ed0, inset 0 2px 1px #7fcceb;
+  background-size: 36px 36px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.05s ease-out;
+  -moz-transition: all 0.05s ease-out;
+  -ms-transition: all 0.05s ease-out;
+  -o-transition: all 0.05s ease-out;
+  transition: all 0.05s ease-out;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul > li.has-sub:hover > a:after {
+  background-position: 0 -18px;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul > li.has-sub > a:before {
+  content: '';
+  position: absolute;
+  right: 11px;
+  top: 25.5px;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 3px solid transparent;
+  border-top-color: #ffffff;
+  z-index: 99;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul > li.has-sub:hover > a:before {
+  border-top-color: #19799f;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  -webkit-transition: top .05s ease, opacity .1s ease;
+  -moz-transition: top .05s ease, opacity .1s ease;
+  -ms-transition: top .05s ease, opacity .1s ease;
+  -o-transition: top .05s ease, opacity .1s ease;
+  transition: top .05s ease, opacity .1s ease;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li > ul {
+  top: 80px;
+  border-radius: 5px;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li:hover > ul {
+  left: auto;
+  top: 51px;
+  opacity: 1;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right > ul > li:hover > ul {
+  right: 0;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul ul {
+  top: 40px;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul > li:hover > ul {
+  top: 0;
+  left: 178px;
+  padding-left: 10px;
+  opacity: 1;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul > li:hover > ul {
+  left: auto;
+  right: 178px;
+  padding-left: 0;
+  padding-right: 10px;
+  opacity: 1;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li a {
+  width: 180px;
+  padding: 12px 25px;
+  font-size: 13px;
+  font-weight: 700;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  text-decoration: none;
+  background: #3db2e1;
+  -webkit-transition: color .1s ease;
+  -moz-transition: color .1s ease;
+  -ms-transition: color .1s ease;
+  -o-transition: color .1s ease;
+  transition: color .1s ease;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li:hover > a,
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li > a:hover,
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li.active > a {
+  color: #cae5fd;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li:first-child > a {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: inset 0 2px 2px #88d0ed;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li:last-child > a {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: inset 0 -3px 0 #27a9de, inset 0 -3px 3px #1f9acc, 0 1px 1px rgba(0, 0, 0, 0.03), 0 2px 2px rgba(0, 0, 0, 0.05), 0 2px 3px rgba(0, 0, 0, 0.13);
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul > li.has-sub > a:after {
+  right: 12px;
+  top: 9.5px;
+  background: #3db2e1;
+  background: -webkit-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  background: -ms-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  background: -moz-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  background: -o-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  background: linear-gradient(to bottom, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+  box-shadow: inset 0 -1px 1px #209ed0, inset 0 2px 1px #7fcceb;
+  background-size: 36px 36px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}	
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul > li.has-sub > a:after {
+  right: auto;
+  left: 12px;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul > li.has-sub:hover > a:after {
+  background-position: 0 -18px;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul > li.has-sub > a:before {
+  top: 15.5px;
+  right: 16px;
+  border-top-color: transparent;
+  border-left-color: #ffffff;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul > li.has-sub > a:before {
+  top: 15.5px;
+  right: auto;
+  left: 16px;
+  border-top-color: transparent;
+  border-right-color: #ffffff;
+  border-left-color: transparent;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul > li.has-sub:hover > a:before {
+  border-top-color: transparent;
+  border-left-color: #1c89b5;
+}
+div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul > li.has-sub:hover > a:before {
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: #1c89b5;
+}
+/* TODO for small width
+@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  div#topNav.SFPUCNavigation {
+    width: 100%;
+  }
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul ul,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-center > ul,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li > ul,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li:hover > ul,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li:hover > ul,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul ul li:hover > ul,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenun.align-right ul ul li:hover > ul,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul ul li:hover > ul {
+    position: relative;
+    left: 0;
+    right: auto;
+    top: 0;
+    width: 100%;
+    display: none;
+    padding: 0;
+    opacity: 1;
+    text-align: left;
+  }
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul li {
+    width: 100%;
+    border-top: 1px solid rgba(120, 120, 120, 0.2);
+  }
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li > a,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li a,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li:first-child > a,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li:last-child > a {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+  }
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul li a {
+    padding-left: 12.5px;
+  }
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li a {
+    padding: 14px 25px 14px 27.5px;
+  }
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul ul li a {
+    padding-left: 42.5px;
+  }
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul ul ul li a {
+    padding-left: 57.5px;
+  }
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li.has-sub > a:after,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li.has-sub > a:before,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li.has-sub > a:after,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li.has-sub > a:before {
+    display: none;
+  }
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu #menu-button {
+    position: relative;
+    display: block;
+    padding: 20px;
+    padding-left: 12.5px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #ffffff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu .submenu-button {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 53px;
+    height: 53px;
+    border-left: 1px solid rgba(120, 120, 120, 0.2);
+    z-index: 10;
+    cursor: pointer;
+  }
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul .submenu-button {
+    height: 41px;
+  }
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul .submenu-button:after,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu #menu-button:after {
+    content: '';
+    position: absolute;
+    right: 12.5px;
+    top: 12.5px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 15px;
+    background: #3db2e1;
+    background: -webkit-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+    background: -ms-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+    background: -moz-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+    background: -o-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+    background: linear-gradient(to bottom, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
+    box-shadow: inset 0 -1px 1px #209ed0, inset 0 2px 1px #7fcceb;
+    background-size: 56px 56px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+  }
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul .submenu-button.submenu-opened:after,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu #menu-button.menu-opened:after {
+    background-position: 0 -28px;
+  }
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul .submenu-button:after {
+    top: 6.5px;
+  }
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu #menu-button:before,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu .submenu-button:before {
+    content: '';
+    position: absolute;
+    right: 22.5px;
+    top: 25.5px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    z-index: 99;
+  }
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul .submenu-button:before {
+    top: 19.5px;
+  }
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu #menu-button.menu-opened:before,
+  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu .submenu-button.submenu-opened:before {
+    border-top-color: #19799f;
+  }
+}*/
+
+/* Container for search field and go button */
+#searchInputBox {
+	width: 300px;
+}
+#SearchBox .ms-srch-sb-border,
+#SearchBox .ms-srch-sb-border:hover {
+	border: 0;
+}
+#SearchBox {
+    height: 25px;
+    width: 260px;
+	padding-left: 10px;
+    margin-bottom: 10px;
+    border: 0 solid #000000;
+    float: left;
+    font-size: 11px !important;
+    line-height: 25px !important;
+	background-color: #edf4fe;
+    background: url("../img/search_bg.gif") 0 0 no-repeat;
+	border-radius: 12.5px;
+    -webkit-border-radius: 12.5px;
+    -moz-border-radius: 12.5px;
+    color:#b1b1b2;
+}
+[id$="_PlaceHolderSearchArea_SmallSearchInputBox1_csr_SearchLink"],
+.searchbox_button {
+	float: right;
+}
+
+/*ITS Page Layout Styles */
+.ITSleftColumnWraper, .ITSrightColumnWraper {
+	width: 20%;
+	height: 100%;
+	float: left;
+	padding: 0.3em;
+	box-shadow: 0 1px 1px #B6B7B7;
+	-webkit-box-shadow: 0 1px 1px #B6B7B7;
+	-moz-box-shadow: 0 1px 1px #B6B7B7;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: solid 0 #B6B7B7;
+}
+.ITSmainContentWraper {
+	width: 57%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0.3em;
+	box-shadow: 0 1px 1px #B6B7B7;
+	-webkit-box-shadow: 0 1px 1px #B6B7B7;
+	-moz-box-shadow: 0 1px 1px #B6B7B7;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: solid 0 #B6B7B7;
+}
+.ITSrightColumnWraper {
+	float: right;
+}
+.ITSContentWraper {
+	float: left;
+	width: 100%;
+	display: table-row;
+}
+
+/* SHAREPOINT SPECIFIC STYLE CUSTOMIZATION */
+#s4-titlerow, #s4-bodyContainer {
+    padding: 0;
+    margin: 0;
+}
+#s4-bodyContainer, footer {
+	width: auto;
+}
+/* Styles to stick footer to bottom */
+.contentWraper:after {
+	content: ""; 
+	display: block;
+}
+footer, .contentWraper:after {
+	height: 170px;
+}
+h1#pageTitle.SFPUCPageTitle {
+    font-family: MyriadProRegular, Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-style: italic;
+	font-size: 25pt;
+    color: #27AAE1;
+	display: inline-block;
+    width: auto;
+    position: absolute;
+	top: 10px;
+    margin: 0;
+    padding: 1.1em 0.1em 0.1em 0;
+    line-height: 0;
+}
+div#titleAreaBox {
+    margin: 0;
+}
+#titleAreaRow div#siteIcon.SFPUCLogo {
+    min-width: 300px;
+    height: 75px;
+    line-height: 75px;
+    text-align: left;
+    margin-left: -17px;
+    margin-right: 20px;
+    float: left;
+}
+div#DeltaTopNavigation {
+    position: absolute;
+    top: 78px;
+	margin-left: -300px;
+	width: 86.6%;
+}
+div.real-breadcrumb {
+    font-weight: bold;
+}
+div[id$="_ChromeTitle"].ms-webpart-chrome-title {
+	display: block;
+	background: #27a9e1;
+    background: -o-linear-gradient(top, #27a9e1,  #0077be);
+    background: -ms-linear-gradient(top, #27a9e1,  #0077be);
+    background: -webkit-linear-gradient(top, #27a9e1,  #0077be);
+    background: -moz-linear-gradient(top, #27a9e1,  #0077be);
+    background: linear-gradient(to bottom, #27a9e1,  #0077be);
+	color: #FFFFFF;
+	font-size: 12pt;
+	font-weight: bold;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	padding: 0.5em 2em;
+	margin: 0;
+	border: 1px solid #27AAE1;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-bottom-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-bottom-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+}
+.ms-webpart-titleText.ms-webpart-titleText, .ms-webpart-titleText > a, div[id$="_ChromeTitle"].ms-webpart-chrome-title a {
+	color: #FFFFFF;
+	font-size: 12pt;
+	font-weight: bold;
+}
+nobr span {
+	white-space: normal;
+    word-break: break-word;
+
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: none;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+        font-size: 1em;
+        font-family: arial;
+        color: #424242;
+		padding: 0;
+		margin: 0;
+    }
+
+    h2,
+    h3{
+		font-family: MyriadProRegular, Helvetica, Arial, "Lucida Grande", sans-serif;
+        page-break-after: avoid;
+		font-size: 1.4em;
+		color: #27AAE1;
+	}
+}

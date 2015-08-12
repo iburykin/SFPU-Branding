@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{390B713E-1813-494A-800A-B0C721EB90C7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sfpucBranding</RootNamespace>
+    <AssemblyName>sfpucBranding</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\SFPUCBrandingFeature\SFPUCBrandingFeature.feature">
+      <FeatureId>{dcdc9ee8-bbb3-4cd5-a51c-7f1bb4849e7d}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="LayoutsModule\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c75ff35e-dd44-4afd-ae7f-729f573eff01}</SharePointProjectItemId>
+    </None>
+    <None Include="Layouts\sfpucBranding\css\GothamProRegular.eot" />
+    <None Include="Layouts\sfpucBranding\css\GothamProRegular.ttf" />
+    <None Include="Layouts\sfpucBranding\css\GothamProRegular.woff" />
+    <None Include="Layouts\sfpucBranding\css\MyriadProRegular.otf" />
+    <None Include="Layouts\sfpucBranding\css\MyriadProRegular.ttf" />
+    <None Include="Layouts\sfpucBranding\css\MyriadProRegular.woff" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fc60381e-3fef-4ab8-bbe1-d61c46aa6af5}</SharePointProjectItemId>
+    </None>
+    <None Include="MasterPagesModule\sfpuc_base.master" />
+    <None Include="MasterPagesModule\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9dc80a9c-a659-4074-ad1d-081be9a412cc}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{548e7e3a-ed9d-47b0-8a20-628673f265ad}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\SFPUCBrandingFeature\SFPUCBrandingFeature.Template.xml">
+      <DependentUpon>SFPUCBrandingFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="LayoutsModule\Elements.xml" />
+    <Content Include="LayoutsModule\SFPUCWebPartsLayout.aspx" />
+    <Content Include="LayoutsModule\SFPUCWebPartsLayoutITS.aspx" />
+    <Content Include="Layouts\sfpucBranding\css\main.css" />
+    <Content Include="Layouts\sfpucBranding\css\normalize.css" />
+    <Content Include="Layouts\sfpucBranding\img\323583025-pag2.png" />
+    <Content Include="Layouts\sfpucBranding\img\favicon.ico" />
+    <Content Include="Layouts\sfpucBranding\img\goButton.gif" />
+    <Content Include="Layouts\sfpucBranding\img\left.png" />
+    <Content Include="Layouts\sfpucBranding\img\logo300-75.jpg" />
+    <Content Include="Layouts\sfpucBranding\img\right.png" />
+    <Content Include="Layouts\sfpucBranding\img\search_bg.gif" />
+    <Content Include="Layouts\sfpucBranding\img\SFPUCico.ICO" />
+    <Content Include="Layouts\sfpucBranding\img\topbar.png" />
+    <Content Include="Layouts\sfpucBranding\img\water-header-background.png" />
+    <Content Include="Layouts\sfpucBranding\js\main.js" />
+    <Content Include="Layouts\sfpucBranding\js\plugins.js" />
+    <Content Include="Layouts\sfpucBranding\js\vendor\jquery-1.11.3.min.js" />
+    <Content Include="Layouts\sfpucBranding\js\vendor\modernizr-2.8.3.min.js" />
+    <Content Include="MasterPagesModule\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
