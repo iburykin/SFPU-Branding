@@ -67,6 +67,10 @@
     <None Include="Layouts\sfpucBranding\css\MyriadProRegular.otf" />
     <None Include="Layouts\sfpucBranding\css\MyriadProRegular.ttf" />
     <None Include="Layouts\sfpucBranding\css\MyriadProRegular.woff" />
+    <None Include="Layouts\sfpucBranding\navBar\css\MyriadPro-Regular.otf" />
+    <None Include="Layouts\sfpucBranding\navBar\css\MyriadProRegular.otf" />
+    <None Include="Layouts\sfpucBranding\navBar\css\MyriadProRegular.ttf" />
+    <None Include="Layouts\sfpucBranding\navBar\css\MyriadProRegular.woff" />
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{fc60381e-3fef-4ab8-bbe1-d61c46aa6af5}</SharePointProjectItemId>
     </None>
@@ -97,6 +101,7 @@
     <Content Include="Layouts\sfpucBranding\css\normalize.css" />
     <Content Include="Layouts\sfpucBranding\img\323583025-pag2.png" />
     <Content Include="Layouts\sfpucBranding\img\favicon.ico" />
+    <Content Include="Layouts\sfpucBranding\img\footer.png" />
     <Content Include="Layouts\sfpucBranding\img\goButton.gif" />
     <Content Include="Layouts\sfpucBranding\img\left.png" />
     <Content Include="Layouts\sfpucBranding\img\logo300-75.jpg" />
@@ -109,6 +114,9 @@
     <Content Include="Layouts\sfpucBranding\js\plugins.js" />
     <Content Include="Layouts\sfpucBranding\js\vendor\jquery-1.11.3.min.js" />
     <Content Include="Layouts\sfpucBranding\js\vendor\modernizr-2.8.3.min.js" />
+    <Content Include="Layouts\sfpucBranding\navBar\css\navBar.css" />
+    <Content Include="Layouts\sfpucBranding\navBar\js\navBar.js" />
+    <Content Include="Layouts\sfpucBranding\navBar\navBar.html" />
     <Content Include="Layouts\sfpucBranding\xslt\announcments.xsl" />
     <Content Include="MasterPagesModule\Elements.xml">
       <SubType>Designer</SubType>
