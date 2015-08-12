@@ -25,26 +25,29 @@
 </asp:Content>
 <asp:Content ContentPlaceHolderId="PlaceHolderMain" runat="server">
 	<div class="welcome blank-wp">
-		<PublishingWebControls:EditModePanel runat="server" CssClass="edit-mode-panel title-edit">
-			<SharePointWebControls:TextField runat="server" FieldName="Title"/>
-		</PublishingWebControls:EditModePanel>
-		<div class="welcome-content">
-			<PublishingWebControls:RichHtmlField FieldName="PublishingPageContent" HasInitialFocus="True" MinimumEditHeight="200px" runat="server"/>
-		</div>
-
-		<div class="mainContent">
-			
-			<div class="mainContentLeft">
-				<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_TopLeft%>" Width="75%" ID="TopLeftRow"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+		<div class="ms-table ms-fullWidth">
+			<div class="tableCol-100">
+				<div class="cell-margin">
+					<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_Header%>" ID="Header"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+				</div>
+				<div class="ITSContentWraper tableCol-100">
+					<div class="ITSleftColumnWraper cell-margin tableCol-25">
+						<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_CenterLeft%>" ID="CenterLeftColumn"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+					</div>
+					<div class="ITSrightColumnWraper tableCol-25">
+						<WebPartPages:WebPartZone runat="server" ContainerWidth="25%" Title="<%$Resources:cms,WebPartZoneTitle_CenterRight%>" ID="CenterRightColumn"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+					</div>
+					<div class="ITSmainContentWraper cell-margin tableCol-50">
+					
+						<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_Center%>" ID="CenterColumn"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>				
+					
+					</div>
+				</div>
 			</div>
-
-				<div class="aside">
-				<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_Right%>" ID="RightColumn" Width="80%" Orientation="Vertical"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-				</div>
-				</div>
 			<SharePointWebControls:ScriptBlock runat="server">
 			if(typeof(MSOLayout_MakeInvisibleIfEmpty) == &quot;function&quot;) 
+			
 			{MSOLayout_MakeInvisibleIfEmpty();}</SharePointWebControls:ScriptBlock>
 		</div>
-
+	</div>
 </asp:Content>
