@@ -83,12 +83,14 @@
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <Content Include="Features\SFPUCBrandingFeature\SFPUCBrandingFeature.Template.xml">
       <DependentUpon>SFPUCBrandingFeature.feature</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="LayoutsModule\Elements.xml">
       <SubType>Designer</SubType>
@@ -110,14 +112,17 @@
     <Content Include="Layouts\sfpucBranding\img\SFPUCico.ICO" />
     <Content Include="Layouts\sfpucBranding\img\topbar.png" />
     <Content Include="Layouts\sfpucBranding\img\water-header-background.png" />
+    <Content Include="Layouts\sfpucBranding\js\jquery-1.11.1.min.js" />
+    <Content Include="Layouts\sfpucBranding\js\jquery-2.1.1.min.js" />
     <Content Include="Layouts\sfpucBranding\js\main.js" />
     <Content Include="Layouts\sfpucBranding\js\plugins.js" />
-    <Content Include="Layouts\sfpucBranding\js\vendor\jquery-1.11.3.min.js" />
     <Content Include="Layouts\sfpucBranding\js\vendor\modernizr-2.8.3.min.js" />
     <Content Include="Layouts\sfpucBranding\navBar\css\navBar.css" />
     <Content Include="Layouts\sfpucBranding\navBar\js\navBar.js" />
     <Content Include="Layouts\sfpucBranding\navBar\navBar.html" />
-    <Content Include="Layouts\sfpucBranding\xslt\announcments.xsl" />
+    <Content Include="Layouts\sfpucBranding\xslt\announcments.xsl">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="MasterPagesModule\Elements.xml">
       <SubType>Designer</SubType>
     </Content>

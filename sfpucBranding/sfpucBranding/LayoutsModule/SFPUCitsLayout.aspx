@@ -38,7 +38,7 @@
 						    <ZoneTemplate></ZoneTemplate>
 						</WebPartPages:WebPartZone>
 					</div>
-					<div class="ITSrightColumnWraper tableCol-25">
+					<div class="ITSrightColumnWraper tableCol-25 cell-margin ">
 						<WebPartPages:WebPartZone runat="server" ContainerWidth="25%" Title="<%$Resources:cms,WebPartZoneTitle_CenterRight%>" ID="CenterRightColumn">
 						    <ZoneTemplate></ZoneTemplate>
 						</WebPartPages:WebPartZone>
@@ -53,7 +53,7 @@
 				</div>
 			</div>
 			<SharePointWebControls:ScriptBlock runat="server">
-			if(typeof(MSOLayout_MakeInvisibleIfEmpty) == &quot;function&quot;) 
+			if(typeof(MSOLayout_MakeInvisibleIfEmpty) =='function') 
 			
 			{MSOLayout_MakeInvisibleIfEmpty();}</SharePointWebControls:ScriptBlock>
 		</div>

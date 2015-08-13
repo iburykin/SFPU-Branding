@@ -1,76 +1,134 @@
+(function ($) {
 
-(function($){
-$(document).ready(function(){
+    $.fn.menumaker = function (options) {
 
-$(document).ready(function() {
-  $("#cssmenu").menumaker({
-    title: "Menu",
-    format: "multitoggle"
-  });
+        var cssmenu = $(this), settings = $.extend({
+            title: "Menu",
+            format: "dropdown",
+            sticky: false
+        }, options);
 
-  $("#cssmenu").prepend("<div id='menu-line'></div>");
+        return this.each(function () {
+            cssmenu.prepend('<div id="menu-button">' + settings.title + '</div>');
+            $(this).find("#menu-button").on('click', function () {
+                $(this).toggleClass('menu-opened');
+                var mainmenu = $(this).next('ul');
+                if (mainmenu.hasClass('open')) {
+                    mainmenu.hide().removeClass('open');
+                }
+                else {
+                    mainmenu.show().addClass('open');
+                    if (settings.format === "dropdown") {
+                        mainmenu.find('ul').show();
+                    }
+                }
+            });
 
-var foundActive = false, activeElement, linePosition = 0, menuLine = $("#cssmenu #menu-line"), lineWidth, defaultPosition, defaultWidth;
+            cssmenu.find('li ul').parent().addClass('has-sub');
 
-$("#cssmenu > ul > li").each(function() {
-  if ($(this).hasClass('active')) {
-    activeElement = $(this);
-    foundActive = true;
-  }
-});
+            multiTg = function () {
+                cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
+                cssmenu.find('.submenu-button').on('click', function () {
+                    $(this).toggleClass('submenu-opened');
+                    if ($(this).siblings('ul').hasClass('open')) {
+                        $(this).siblings('ul').removeClass('open').hide();
+                    }
+                    else {
+                        $(this).siblings('ul').addClass('open').show();
+                    }
+                });
+            };
 
-if (foundActive === false) {
-  activeElement = $("#cssmenu > ul > li").first();
-}
+            if (settings.format === 'multitoggle') multiTg();
+            else cssmenu.addClass('dropdown');
 
-defaultWidth = lineWidth = activeElement.width();
-defaultPosition = linePosition = activeElement.position().left;
-var tt="0";
-if (activeElement.is(':first-child')){
-	var tt="1";  }
+            if (settings.sticky === true) cssmenu.css('position', 'fixed');
+
+            resizeFix = function () {
+                if ($(window).width() > 768) {
+                    cssmenu.find('ul').show();
+                }
+
+                if ($(window).width() <= 768) {
+                    cssmenu.find('ul').hide().removeClass('open');
+                }
+            };
+            resizeFix();
+            return $(window).on('resize', resizeFix);
+
+        });
+    };
+})(jQuery);
+
+(function ($) {
+    $(document).ready(function () {
+
+        $(document).ready(function () {
+            $("#cssmenu").menumaker({
+                title: "Menu",
+                format: "multitoggle"
+            });
+
+            $("#cssmenu").prepend("<div id='menu-line'></div>");
+
+            var foundActive = false, activeElement, linePosition = 0, menuLine = $("#cssmenu #menu-line"), lineWidth, defaultPosition, defaultWidth;
+
+            $("#cssmenu > ul > li").each(function () {
+                if ($(this).hasClass('active')) {
+                    activeElement = $(this);
+                    foundActive = true;
+                }
+            });
+
+            if (foundActive === false) {
+                activeElement = $("#cssmenu > ul > li").first();
+            }
+
+            defaultWidth = lineWidth = activeElement.width();
+            defaultPosition = linePosition = activeElement.position().left;
+            var tt = "0";
+            if (activeElement.is(':first-child')) {
+                var tt = "1";
+            }
 
 
-menuLine.css("width", lineWidth);
-menuLine.css("left", linePosition);
+            menuLine.css("width", lineWidth);
+            menuLine.css("left", linePosition);
 
-//123
-menuLine.addClass('hover1');
-menuLine.removeClass('hover2');
-menuLine.removeClass('hover3');
+            menuLine.addClass('hover2');
+            menuLine.removeClass('hover3');
+            //menuLine.removeClass('hover3');
 
-$("#cssmenu > ul > li").hover(function() {
-  activeElement = $(this);
-  lineWidth = activeElement.width();
-  linePosition = activeElement.position().left;
-  menuLine.css("width", lineWidth);
-  menuLine.css("left", linePosition);
-  if (activeElement.is(':first-child')){
-  	menuLine.addClass('hover2');
-  	menuLine.removeClass('hover3');
-  	menuLine.removeClass('hover1');
-  }
-  
-  
-}, 
-function() {
-  menuLine.css("left", defaultPosition);
-  menuLine.css("width", defaultWidth);
-  if (tt=="1"){
-  	menuLine.addClass('hover2');
-  	menuLine.removeClass('hover3');
-  	menuLine.removeClass('hover1');
-
-  }
-  if ($("#cssmenu > ul > li").is(':first-child')){
-	menuLine.addClass('hover3');
-  	menuLine.removeClass('hover1');
-  	menuLine.removeClass('hover2');
-  }
-  
-});
-
-});
+            $("#cssmenu > ul > li").hover(function () {
+                activeElement = $(this);
+                lineWidth = activeElement.width();
+                linePosition = activeElement.position().left;
+                menuLine.css("width", lineWidth);
+                menuLine.css("left", linePosition);
+                if (activeElement.is(':first-child')) {
+                    menuLine.addClass('hover2');
+                    menuLine.removeClass('hover3');
+                    menuLine.removeClass('hover1');
+                } else {
+                    menuLine.addClass('hover3');
+                    //menuLine.removeClass('hover1');
+                    menuLine.removeClass('hover2');
+                }
 
 
-});
+            },
+            function () {
+                menuLine.css("left", defaultPosition);
+                menuLine.css("width", defaultWidth);
+                if (tt == "1") {
+                    menuLine.addClass('hover2');
+                    menuLine.removeClass('hover3');
+                    //menuLine.removeClass('hover1');
+                }
+            });
+
+        });
+
+
+    });
 })(jQuery);

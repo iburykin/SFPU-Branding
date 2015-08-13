@@ -1,15 +1,4 @@
-﻿/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
+﻿
 html {
     color: #222;
     font-size: 1em;
@@ -40,7 +29,7 @@ html {
 }
 /*
  * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
+ * 
  *
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
@@ -72,7 +61,6 @@ hr {
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
 audio,
@@ -138,7 +126,7 @@ body {
 }
 a {
     color: #0076BD;
-    text-shadow: 0 0 1px #B6B7B7;
+    text-shadow: 0 0 0.3px #B6B7B7;
     text-decoration: none;	
 }
 a:hover, a:active {
@@ -430,7 +418,7 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li > a {
   color: #666666;
  /* text-transform: uppercase; */
   letter-spacing: 1px;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 0.3px 0 rgba(0, 0, 0, 0.25);
   font-weight: 700;
   text-decoration: none;
   -webkit-transition: color .1s ease;
@@ -533,7 +521,7 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li a {
   padding: 12px 25px;
   font-size: 13px;
   font-weight: 700;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 0.3px 0 rgba(0, 0, 0, 0.25);
   color: #ffffff;
   text-decoration: none;
   background: #3db2e1;
@@ -775,12 +763,12 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul > li.has-
 	width: 20%;
 	height: 100%;
 	float: left;
-	padding: 0.3em;
+	/*padding: 0.3em;
 	box-shadow: 0 1px 1px #B6B7B7;
 	-webkit-box-shadow: 0 1px 1px #B6B7B7;
 	-moz-box-shadow: 0 1px 1px #B6B7B7;
 	background-color: rgba(255, 255, 255, 0.3);
-	border: solid 0 #B6B7B7;
+	border: solid 0 #B6B7B7;*/
 }
 .ITSmainContentWraper {
 	width: 57%;
@@ -884,6 +872,9 @@ div[id$="_ChromeTitle"].ms-webpart-chrome-title {
 	font-size: 12pt;
 	font-weight: bold;
 }
+.ms-webpartzone-cell {
+    margin: auto auto 5px auto !important;
+}
 nobr span {
 	white-space: normal;
     word-break: break-word;
@@ -903,7 +894,7 @@ nobr span {
 
 /*
  * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+
  */
 
 .visuallyhidden {
@@ -920,7 +911,6 @@ nobr span {
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
  */
 
 .visuallyhidden.focusable:active,
@@ -984,7 +974,6 @@ nobr span {
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
 @media print {
@@ -992,8 +981,7 @@ nobr span {
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+        color: #000 !important; 
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -1026,11 +1014,6 @@ nobr span {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
 
     thead {
         display: table-header-group;
@@ -1065,3 +1048,4 @@ nobr span {
 		color: #27AAE1;
 	}
 }
+

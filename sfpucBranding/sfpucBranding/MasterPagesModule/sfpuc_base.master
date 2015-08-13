@@ -17,8 +17,7 @@
         </SharePoint:RobotsMetaTag>
         <SharePoint:PageTitle runat="server">
             <asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server">
-                <SharePoint:ProjectProperty Property="Title" runat="server">
-                </SharePoint:ProjectProperty>
+                <SharePoint:ProjectProperty Property="Title" runat="server"></SharePoint:ProjectProperty>
             </asp:ContentPlaceHolder>
         </SharePoint:PageTitle>
         <SharePoint:StartScript runat="server">
@@ -67,12 +66,15 @@
         <link rel="icon" href="/_layouts/15/sfpucBranding/img/favicon.ico" />
         <link rel="stylesheet" href="/_layouts/15/sfpucBranding/css/normalize.css" />
         <link rel="stylesheet" href="/_layouts/15/sfpucBranding/css/main.css" />
-        
-        <script src="/_layouts/15/sfpucBranding/js/vendor/modernizr-2.8.3.min.js">
-		//<![CDATA[
+        <!--[if lt IE 9]>
+    <script type="text/javascript" src="/_layouts/15/sfpucBranding/js/jquery-1.11.1.min.js"></script>
+	<![endif]-->
+	<!--[if (gte IE 9) | (!IE)]><!-->
+		<script type="text/javascript" src="/_layouts/15/sfpucBranding/js/jquery-2.1.1.min.js"></script>
+	<!--<![endif]-->
 
-		
-        //]]></script>    
+        <script src="/_layouts/15/sfpucBranding/js/vendor/modernizr-2.8.3.min.js"></script>  
+          
     </head>
     <body onhashchange="if (typeof(_spBodyOnHashChange) != 'undefined') _spBodyOnHashChange();">
 	<PageFieldTextField:SPClientIDGenerator runat="server" ServerControlID="DeltaPlaceHolderMain;DeltaPlaceHolderPageTitleInTitleArea;DeltaPlaceHolderUtilityContent"/>
@@ -175,10 +177,7 @@
                                 </div>
                             </div>
                             <!-- Content -->
-                            <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
-                    href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-            <![endif]-->
+                            
                             <!-- Add your site or application content here -->
                             <div data-name="ContentPlaceHolderMain">
                                 
@@ -195,20 +194,9 @@
 								<p>© Copyright San Francisco Public Utilities Commission</p>
 							</div>
                         </footer>
-                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">//<![CDATA[
-
-                        //]]></script>
-                        <script>//<![CDATA[window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js">//<![CDATA[<\/script>')
-
-                        //]]></script>
-                        <script src="/_layouts/15/sfpucBranding/js/plugins.js">//<![CDATA[
-
-                        
-                        //]]></script>
-                        <script src="/_layouts/15/sfpucBranding/js/main.js">//<![CDATA[
-
-                        
-                        //]]></script>
+                                            
+                        <script src="/_layouts/15/sfpucBranding/js/plugins.js"></script>
+                        <script src="/_layouts/15/sfpucBranding/js/main.js"></script>
                     </div>
                 </div>
             <PageFieldTextField:AjaxDelta id="DeltaFormDigest" BlockElement="true" runat="server">
