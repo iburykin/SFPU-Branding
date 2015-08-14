@@ -100,7 +100,7 @@
 #cssmenu > ul > li > a {
   padding: 5px 10px;
   font-size: 11pt;
-  font-weight: bold;
+  /*font-weight: bold;*/
   text-decoration: none;
   color: #dddddd;
   -webkit-transition: color .2s ease;

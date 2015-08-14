@@ -19,16 +19,17 @@
 	<xsl:variable name="RowsCount" select="count($Rows)"/>
 	
 	<xsl:call-template name="html.tools"/>
+	
 	<div class="announcements">
 	    <xsl:for-each select="$Rows">
 			<div class="announcement-item">				
 			    <div class="announcement-title">
-			    	<span class="date"><xsl:value-of select="@Date"/></span>:
+			    	<span class="date"><xsl:value-of select="@Expires"/></span>:
 			    	<xsl:value-of select="@Title"/>
 				</div>
 			    <div class="announcement-desc">
 
-				    <xsl:variable name="Announcement" select="@Announcement" />
+				    <xsl:variable name="Announcement" select="@Body" />
 				    
 				    
 				    <xsl:call-template name="remove-html">
@@ -43,7 +44,7 @@
 									EditLink2(this,41);return false;
 								</xsl:attribute>
 					    		<xsl:attribute name="href">
-                    ../Lists/Announcements SFPUC/DispForm.aspx?ID=<xsl:value-of select="@ID"/></xsl:attribute>
+                    ../Lists/Announcements/DispForm.aspx?ID=<xsl:value-of select="@ID"/></xsl:attribute>
 								<xsl:value-of select="$AnnouncementPreview" />
 							</a>
 				        </xsl:when>
@@ -53,7 +54,7 @@
 									EditLink2(this,41);return false;
 								</xsl:attribute>
 					    		<xsl:attribute name="href">
-                    ../Lists/Announcements SFPUC/DispForm.aspx?ID=<xsl:value-of select="@ID"/></xsl:attribute>
+                    ../Lists/Announcements/DispForm.aspx?ID=<xsl:value-of select="@ID"/></xsl:attribute>
 								<xsl:value-of select="$Announcement" />
 							</a>				            
 				        </xsl:otherwise>
@@ -64,7 +65,7 @@
 		</xsl:for-each>
 	    
     </div>
-    <div class="more"><a href="../Lists/Announcements SFPUC">More Events</a></div>
+    <div class="more"><a href="../Lists/Announcements">More Events</a></div>
     
 </xsl:template>
 

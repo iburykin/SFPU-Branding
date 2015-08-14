@@ -348,6 +348,12 @@ span.SFPUCimageBckg {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;	
 }
+.ms-core-menu-title{
+color:black;
+text-shadow:none;
+font-size: 9pt;
+    font-weight: normal;
+}
 
 /* Top Navigation */
 div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu,
