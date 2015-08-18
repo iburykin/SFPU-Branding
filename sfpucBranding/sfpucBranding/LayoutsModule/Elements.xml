@@ -2,28 +2,21 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="LayoutsModule" Url="_catalogs/masterPage">
     <File Path="LayoutsModule\SFPUCWebPartsLayout.aspx" Url="SFPUCWebPartsLayout.aspx" Type="GhostableInLibrary" ReplaceContent="true">
-      <Property Name="Title"                            Value="SFPUC WebParts Layout" />
-      <Property Name="MasterPageDescription"            Value="Use this for creating content." />
-      <Property Name="ContentType"                      Value="$Resources:cmscore,contenttype_pagelayout_name;" />
-      <Property Name="PublishingPreviewImage"           Value="~sitecollection/_layouts/15/sfpucBranding/img/SFPUCico.ICO" />
-    </File>
-      
-    <File Path="LayoutsModule\SFPUCWebPartsLayoutITS.aspx" Url="SFPUCWebPartsLayoutITS.aspx" Type="GhostableInLibrary" ReplaceContent="true">
-      <Property Name="Title"                            Value="SFPUC WebParts Layout ITS" />
+      <Property Name="Title"                            Value="SFPUC WebParts Test Layout" />
       <Property Name="MasterPageDescription"            Value="Use this for creating content." />
       <Property Name="ContentType"                      Value="$Resources:cmscore,contenttype_pagelayout_name;" />
       <Property Name="PublishingPreviewImage"           Value="~sitecollection/_layouts/15/sfpucBranding/img/SFPUCico.ICO" />
     </File>
     
     <File Path="LayoutsModule\SFPUCitsLayout.aspx" Url="SFPUCitsLayout.aspx" Type="GhostableInLibrary" ReplaceContent="true">
-      <Property Name="Title"                            Value="SFPUC Cits Layout" />
+      <Property Name="Title"                            Value="SFPUC ITS Page Layout" />
       <Property Name="MasterPageDescription"            Value="Use this for creating content." />
       <Property Name="ContentType"                      Value="$Resources:cmscore,contenttype_pagelayout_name;" />
       <Property Name="PublishingPreviewImage"           Value="~sitecollection/_layouts/15/sfpucBranding/img/SFPUCico.ICO" />
     </File>
     
     <File Path="LayoutsModule\SFPUC2ColumnsV2.aspx" Url="SFPUC2ColumnsV2.aspx" Type="GhostableInLibrary" ReplaceContent="true">
-      <Property Name="Title"                            Value="SFPUC 2ColumnsV2 Layout" />
+      <Property Name="Title"                            Value="SFPUC 2ColumnsV2 Test Layout" />
       <Property Name="MasterPageDescription"            Value="Use this for creating content." />
       <Property Name="ContentType"                      Value="$Resources:cmscore,contenttype_pagelayout_name;" />
       <Property Name="PublishingPreviewImage"           Value="~sitecollection/_layouts/15/sfpucBranding/img/SFPUCico.ICO" />
