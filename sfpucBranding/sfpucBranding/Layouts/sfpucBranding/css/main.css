@@ -787,6 +787,9 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul > li.has-
 	background-color: rgba(255, 255, 255, 0.3);
 	border: solid 0 #B6B7B7;*/
 }
+.ms-rtestate-field {
+	line-height: 0;
+}
 .ITSrightColumnWraper {
 	float: right;
 }
@@ -815,12 +818,12 @@ footer, .contentWraper:after {
 h1#pageTitle.SFPUCPageTitle {
     font-family: MyriadProRegular, Helvetica, Arial, "Lucida Grande", sans-serif;
     font-style: italic;
-	font-size: 25pt;
+	font-size: 20pt;
     color: #27AAE1;
 	display: inline-block;
     width: auto;
     position: absolute;
-	top: 10px;
+	top: 12px;
     margin: 0;
     padding: 1.1em 0.1em 0.1em 0;
     line-height: 0;

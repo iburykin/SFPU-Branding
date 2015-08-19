@@ -68,6 +68,7 @@
                 title: "Menu",
                 format: "multitoggle"
             });
+/*** Orange bar removed						
 
             $("#cssmenu").prepend("<div id='menu-line'></div>");
 
@@ -126,7 +127,7 @@
                     //menuLine.removeClass('hover1');
                 }
             });
-
+*/
         });
 
 
