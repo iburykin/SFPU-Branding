@@ -118,7 +118,7 @@ body {
 	width: 100%;
 	min-width: 1024px;
     color: #222;
-    font-family: MyriadProRegular, Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "Segoe UI", Segoe, Arial, Helvetica, Tahoma, sans-serif;
     font-weight: 300;
     font-size: 10pt;
     padding: 0;
@@ -147,7 +147,7 @@ h3 {
 	orphans: 3;
 	widows: 3;
 	font-size: 1em;
-	font-family: MyriadProRegular. Arial, "Lucida Grande", sans-serif;
+	font-family: "Segoe UI", Segoe, Arial, Helvetica, Tahoma, sans-serif;
 	color: #424242;
 	padding: 0;
 	margin: 0;
@@ -158,7 +158,7 @@ p{
 }
 h2,
 h3{
-	font-family: MyriadProRegular, Arial, "Lucida Grande", sans-serif;
+	font-family: "Segoe UI", Segoe, Arial, Helvetica, Tahoma, sans-serif;
 	page-break-after: avoid;
 	font-size: 1.4em;
 	color: #27AAE1;
@@ -349,9 +349,9 @@ span.SFPUCimageBckg {
 	-moz-border-radius: 5px;	
 }
 .ms-core-menu-title{
-color:black;
-text-shadow:none;
-font-size: 9pt;
+	color:black;
+	text-shadow:none;
+	font-size: 9pt;
     font-weight: normal;
 }
 
@@ -361,16 +361,16 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul,
 div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul li,
 div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul li a,
 div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu #menu-button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  list-style: none;
-  line-height: 1;
-  display: block;
-  position: relative;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	line-height: 1;
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 div[id$="_TopNavigationMenu"] a.popout {
      background-image: url("/_layouts/15/images/menu-down.gif?rev=23") !important;
@@ -816,9 +816,10 @@ footer, .contentWraper:after {
 	height: 170px;
 }
 h1#pageTitle.SFPUCPageTitle {
-    font-family: MyriadProRegular, Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "Segoe UI", Segoe, Arial, Helvetica, Tahoma, sans-serif;
     font-style: italic;
-	font-size: 20pt;
+	font-size: 18pt;
+	font-weight: bolder;
     color: #27AAE1;
 	display: inline-block;
     width: auto;
@@ -1043,7 +1044,7 @@ nobr span {
         orphans: 3;
         widows: 3;
         font-size: 1em;
-        font-family: arial;
+        font-family: "Segoe UI", Segoe, Arial, Helvetica, Tahoma, sans-serif;
         color: #424242;
 		padding: 0;
 		margin: 0;
@@ -1051,7 +1052,7 @@ nobr span {
 
     h2,
     h3{
-		font-family: MyriadProRegular, Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-family: "Segoe UI", Segoe, Arial, Helvetica, Tahoma, sans-serif;
         page-break-after: avoid;
 		font-size: 1.4em;
 		color: #27AAE1;
