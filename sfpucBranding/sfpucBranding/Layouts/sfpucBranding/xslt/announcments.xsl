@@ -100,6 +100,7 @@
 		overflow-y: scroll;
 		white-space: normal;
     	word-break: break-word;
+		border: solid 1px #c6c6c6;
 	}
 	.announcement-title {
 		color: #000000;
@@ -139,6 +140,8 @@
   	<script>
   	( function( $ ) {
       $( document ).ready(function() {
+		  $("div.announcement").parent().css("background", "#ddd");
+		  
 	      $("div.announcement-desc").each(function( index ) {
 	      	var announcement = $(this).text();
 	      	if ( announcement.length > 200 ) {		
