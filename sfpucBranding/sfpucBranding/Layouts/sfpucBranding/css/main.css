@@ -861,12 +861,8 @@ div[id$="_ChromeTitle"].ms-webpart-chrome-title {
 	color: #FFFFFF;
 	font-size: 12pt;
 	font-weight: bold;
-	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-	box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
 	padding: 0.5em 2em;
 	margin: 0;
-	border: 1px solid #27AAE1;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
