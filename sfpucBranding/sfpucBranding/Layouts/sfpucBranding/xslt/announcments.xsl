@@ -19,7 +19,7 @@
 	<xsl:variable name="RowsCount" select="count($Rows)"/>
 	
 	<xsl:call-template name="html.tools"/>
-	
+
 	<div class="announcements">
 	    <xsl:for-each select="$Rows">
 			<div class="announcement-item">				
@@ -66,7 +66,7 @@
 	    
     </div>
     <div class="more"><a href="../Lists/Announcements">More Events</a></div>
-    
+
 </xsl:template>
 
 
@@ -89,54 +89,7 @@
 </xsl:template>
 
 <xsl:template name="html.tools">
-	<style>
-	.announcements {
-		width: 90%;
-		margin: 0 auto;
-		margin-top: 1em;
-		padding: 1em 0.5em;
-		background: #ffffff;
-		height: 200px;
-		overflow-y: scroll;
-		white-space: normal;
-    	word-break: break-word;
-		border: solid 1px #c6c6c6;
-	}
-	.announcement-title {
-		color: #000000;
-		font-weight: bold;
-		float: left;
-	}
-	.more {
-		float: right;
-		margin-top: 1em;
-		margin-bottom: 1em;
-		margin-right: 2em;
-		display: block;
-		background: #27a9e1;
-	    background: -o-linear-gradient(top, #27a9e1,  #0077be);
-	    background: -ms-linear-gradient(top, #27a9e1,  #0077be);
-	    background: -webkit-linear-gradient(top, #27a9e1,  #0077be);
-	    background: -moz-linear-gradient(top, #27a9e1,  #0077be);
-	    background: linear-gradient(to bottom, #27a9e1,  #0077be);
-		color: #FFFFFF;
-		font-size: 11pt;
-		font-weight: bold;
-		-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-		-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);	
-		box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-		padding: 0.5em 1em;
-		border: 1px solid #27a9e1;
-		border-radius: 5px;
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
-	}
-	.more a {
-		color: #FFFFFF;
-		text-decoration: none;
-	}
 	
-  	</style>
   	<script>
   	( function( $ ) {
       $( document ).ready(function() {

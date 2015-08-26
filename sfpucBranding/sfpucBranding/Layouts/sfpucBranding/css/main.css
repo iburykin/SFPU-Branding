@@ -787,6 +787,9 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul > li.has-
 	background-color: rgba(255, 255, 255, 0.3);
 	border: solid 0 #B6B7B7;*/
 }
+.ITSmainContentWraper div[id^="WebPartWPQ"] {
+	background: #fff;
+}
 .ITSmainContentWraper .ms-rtestate-field {
 	line-height: 0;
 }
@@ -888,6 +891,9 @@ nobr span {
 }
 
 /* Announcements web part */
+div[id^="WebPartWPQ"] {
+	background: #dddddd;
+}
 .announcements {
 	width: 90%;
 	margin: 0 auto;
