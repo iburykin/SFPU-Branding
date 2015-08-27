@@ -390,7 +390,7 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu #menu-button {
 div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu {
   width: 100%;
   border-radius: 5px;  
-  background: #3db2e1;
+  background: #DCDCDC;
   background: -o-linear-gradient(top, #FFFFFF,  #DCDCDC);
   background: -ms-linear-gradient(top, #FFFFFF,  #DCDCDC);
   background: -webkit-linear-gradient(top, #FFFFFF,  #DCDCDC);
@@ -889,10 +889,23 @@ nobr span {
     word-break: break-word;
 
 }
+/*list-view web parts style customization */
+div[id^="WebPartWPQ"] table td[id^="scriptWPQ"] table{
+	width: 95%;
+	margin: 1em auto;
+	margin-top: 1em;
+	padding: 1em 0.5em;
+	background: #ffffff;
+	height: auto;
+	overflow-y: scroll;
+	white-space: normal;
+	word-break: break-word;
+	border: solid 1px #c6c6c6;
+}	
 
 /* Announcements web part */
 div[id^="WebPartWPQ"] {
-	background: #dddddd;
+	background: #DCDCDC;
 }
 .announcements {
 	width: 90%;
