@@ -154,7 +154,9 @@
                                 <asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">
 									<div id="searchInputBox">
                                         <SharePoint:DelegateControl runat="server" ControlId="SmallSearchInputBox" />
-                                        
+                                        <script type="text/javascript"> 
+                                            $('#SearchBox').parent().parent().css('background-color', 'transparent')
+                                        </script>
                                     </div>
                                 </asp:ContentPlaceHolder>
                             </div>
