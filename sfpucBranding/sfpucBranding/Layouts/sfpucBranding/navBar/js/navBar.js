@@ -69,7 +69,6 @@
                 format: "multitoggle"
             });
 /*** Orange bar removed						
-
             $("#cssmenu").prepend("<div id='menu-line'></div>");
 
             var foundActive = false, activeElement, linePosition = 0, menuLine = $("#cssmenu #menu-line"), lineWidth, defaultPosition, defaultWidth;
