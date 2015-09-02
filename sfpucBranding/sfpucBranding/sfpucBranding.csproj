@@ -123,6 +123,9 @@
     <Content Include="Layouts\sfpucBranding\xslt\announcments.xsl">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Layouts\sfpucBranding\xslt\links.xsl">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="MasterPagesModule\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
