@@ -391,6 +391,7 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu {
   width: 100%;
   border-radius: 5px;  
   background: #DCDCDC;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#DCDCDC');
   background: -o-linear-gradient(top, #FFFFFF,  #DCDCDC);
   background: -ms-linear-gradient(top, #FFFFFF,  #DCDCDC);
   background: -webkit-linear-gradient(top, #FFFFFF,  #DCDCDC);

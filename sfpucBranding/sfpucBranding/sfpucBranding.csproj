@@ -105,11 +105,10 @@
     <Content Include="Layouts\sfpucBranding\img\favicon.ico" />
     <Content Include="Layouts\sfpucBranding\img\footer.png" />
     <Content Include="Layouts\sfpucBranding\img\goButton.gif" />
-    <Content Include="Layouts\sfpucBranding\img\left.png" />
     <Content Include="Layouts\sfpucBranding\img\logo300-75.jpg" />
-    <Content Include="Layouts\sfpucBranding\img\right.png" />
     <Content Include="Layouts\sfpucBranding\img\search_bg.gif" />
     <Content Include="Layouts\sfpucBranding\img\SFPUCico.ICO" />
+    <Content Include="Layouts\sfpucBranding\img\topbar.jpg" />
     <Content Include="Layouts\sfpucBranding\img\topbar.png" />
     <Content Include="Layouts\sfpucBranding\img\water-header-background.png" />
     <Content Include="Layouts\sfpucBranding\js\jquery-1.11.1.min.js" />
