@@ -98,6 +98,7 @@
     </Content>
     <Content Include="LayoutsModule\SFPUC2ColumnsV2.aspx" />
     <Content Include="LayoutsModule\SFPUCitsLayout.aspx" />
+    <Content Include="LayoutsModule\SFPUCitsLayoutTable.aspx" />
     <Content Include="LayoutsModule\SFPUCWebPartsLayout.aspx" />
     <Content Include="Layouts\sfpucBranding\css\main.css" />
     <Content Include="Layouts\sfpucBranding\css\normalize.css" />

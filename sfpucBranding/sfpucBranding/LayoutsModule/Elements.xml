@@ -14,6 +14,13 @@
       <Property Name="ContentType"                      Value="$Resources:cmscore,contenttype_pagelayout_name;" />
       <Property Name="PublishingPreviewImage"           Value="~sitecollection/_layouts/15/sfpucBranding/img/SFPUCico.ICO" />
     </File>
+	
+	<File Path="LayoutsModule\SFPUCitsLayoutTable.aspx" Url="SFPUCitsLayoutTable.aspx" Type="GhostableInLibrary" ReplaceContent="true">
+      <Property Name="Title"                            Value="SFPUC ITS Table Page Layout" />
+      <Property Name="MasterPageDescription"            Value="Use this for creating content." />
+      <Property Name="ContentType"                      Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingPreviewImage"           Value="~sitecollection/_layouts/15/sfpucBranding/img/SFPUCico.ICO" />
+    </File>
     
     <File Path="LayoutsModule\SFPUC2ColumnsV2.aspx" Url="SFPUC2ColumnsV2.aspx" Type="GhostableInLibrary" ReplaceContent="true">
       <Property Name="Title"                            Value="SFPUC 2ColumnsV2 Test Layout" />
