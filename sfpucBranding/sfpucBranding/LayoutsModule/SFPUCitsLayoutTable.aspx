@@ -28,24 +28,29 @@
 		<PublishingWebControls:EditModePanel runat="server" CssClass="edit-mode-panel title-edit">
 			<SharePointWebControls:TextField runat="server" FieldName="Title"/>
 		</PublishingWebControls:EditModePanel>
-		<div class="welcome-content">
-			<PublishingWebControls:RichHtmlField FieldName="PublishingPageContent" HasInitialFocus="True" MinimumEditHeight="400px" runat="server"/>
-		</div>
+	
 		<div class="ms-table ms-fullWidth">
-			<div class="ms-table ms-fullWidth">
+			<div class="sfpuc-layout-table ms-table ms-fullWidth">
 				<div class="cell-margin">
 					<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_Header%>" ID="Header"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
 				</div>
-				<div class="ms-table ms-fullWidth">
-					<div class="cell-margin tableCol-33">
-						<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_CenterLeft%>" ID="CenterLeftColumn"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-					</div>
-					<div class="cell-margin tableCol-33">
-						<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_Center%>" ID="CenterColumn"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-					</div>
-					<div class="cell-margin tableCol-33">
-						<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_CenterRight%>" ID="CenterRightColumn"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-					</div>
+				<div class="table-layout-sfpuc ms-table ms-fullWidth">
+				<table>
+				<tr style="vertical-align:top">
+				<td class="cell-left-sfpuc ">
+				<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_CenterLeft%>" ID="CenterLeftColumn"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+					
+				</td>
+				<td class="cell-centr-sfpuc ">
+				<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_Center%>" ID="CenterColumn"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+					
+				</td>
+				<td  class="cell-right-sfpuc >
+				<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_CenterRight%>" ID="CenterRightColumn"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+					
+				</td>
+				</tr>
+				</table>									
 				</div>
 			</div>
 			<SharePointWebControls:ScriptBlock runat="server">

@@ -601,11 +601,11 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul > li.has-
 
 
 .cell-margin {
-  margin: 0px 0px 5px 0px !important;
+ /* margin: 0px 0px 5px 0px !important;*/
 }
 .tableCol-50 {
-    display: block;
-  min-width: inherit;
+    /*display: block;
+  min-width: inherit;*/
 }
 
 
@@ -820,6 +820,26 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul > li.has-
 }
 .ITSmainContentWraper div[id^="WebPartWPQ"] {background: #fff;}
 div[id^="WebPartWPQ"].ms-wpContentDivSpace {overflow-x: auto;}
+/*-------------------------------------------------------------------------------*/
+.table-layout-sfpuc{
+display: inline-flex;
+}
+.sfpuc-layout-table{
+min-width: 1024px;
+}
+.cell-left-sfpuc {
+padding:0px 5px 0px 0px;
+width:25%;
+}
+.cell-centr-sfpuc {
+padding:0px 5px 0px 5px;
+width:50%;
+}
+.cell-right-sfpuc {
+padding:0px 0px 0px 5px;
+width:25%;
+}
+
 /* SHAREPOINT SPECIFIC STYLE CUSTOMIZATION */
 #s4-titlerow, #s4-bodyContainer {
     padding: 0;

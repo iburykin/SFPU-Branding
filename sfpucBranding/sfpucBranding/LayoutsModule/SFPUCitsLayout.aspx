@@ -25,37 +25,36 @@
 </asp:Content>
 <asp:Content ContentPlaceHolderId="PlaceHolderMain" runat="server">
 	<div class="welcome blank-wp">
+		<PublishingWebControls:EditModePanel runat="server" CssClass="edit-mode-panel title-edit">
+			<SharePointWebControls:TextField runat="server" FieldName="Title"/>
+		</PublishingWebControls:EditModePanel>
+	
 		<div class="ms-table ms-fullWidth">
-			<div class="tableCol-100">
+			<div class="sfpuc-layout-table ms-table ms-fullWidth">
 				<div class="cell-margin">
-					<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_Header%>" ID="Header">
-					    <ZoneTemplate></ZoneTemplate>
-					</WebPartPages:WebPartZone>
+					<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_Header%>" ID="Header"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
 				</div>
-				<div class="ITSContentWraper threeCol">
-					<div class="colMid">
-						<div class="colLeft">
-							<div class="ITSmainContentWraper">
-								<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_Center%>" ID="CenterColumn">
-									<ZoneTemplate></ZoneTemplate>
-								</WebPartPages:WebPartZone>			
-							</div>
-							<div class="ITSleftColumnWraper">
-								<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_CenterLeft%>" ID="CenterLeftColumn">
-									<ZoneTemplate></ZoneTemplate>
-								</WebPartPages:WebPartZone>
-							</div>
-							<div class="ITSrightColumnWraper">
-								<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_CenterRight%>" ID="CenterRightColumn">
-									<ZoneTemplate></ZoneTemplate>
-								</WebPartPages:WebPartZone>
-							</div>
-						</div>
-					</div>
+				<div class="table-layout-sfpuc ms-table ms-fullWidth">
+				<table>
+				<tr style="vertical-align:top">
+				<td class="cell-left-sfpuc ">
+				<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_CenterLeft%>" ID="CenterLeftColumn"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+					
+				</td>
+				<td class="cell-centr-sfpuc ">
+				<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_Center%>" ID="CenterColumn"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+					
+				</td>
+				<td  class="cell-right-sfpuc >
+				<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_CenterRight%>" ID="CenterRightColumn"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
+					
+				</td>
+				</tr>
+				</table>									
 				</div>
 			</div>
 			<SharePointWebControls:ScriptBlock runat="server">
-			if(typeof(MSOLayout_MakeInvisibleIfEmpty) =='function') 
+			if(typeof(MSOLayout_MakeInvisibleIfEmpty) == &quot;function&quot;) 
 			
 			{MSOLayout_MakeInvisibleIfEmpty();}</SharePointWebControls:ScriptBlock>
 		</div>
