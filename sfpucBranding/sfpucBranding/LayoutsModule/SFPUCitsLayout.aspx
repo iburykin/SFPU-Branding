@@ -32,23 +32,25 @@
 					    <ZoneTemplate></ZoneTemplate>
 					</WebPartPages:WebPartZone>
 				</div>
-				<div class="ITSContentWraper tableCol-100">
-					<div class="ITSleftColumnWraper cell-margin tableCol-25">
-						<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_CenterLeft%>" ID="CenterLeftColumn">
-						    <ZoneTemplate></ZoneTemplate>
-						</WebPartPages:WebPartZone>
-					</div>
-					<div class="ITSrightColumnWraper tableCol-25 cell-margin ">
-						<WebPartPages:WebPartZone runat="server" ContainerWidth="25%" Title="<%$Resources:cms,WebPartZoneTitle_CenterRight%>" ID="CenterRightColumn">
-						    <ZoneTemplate></ZoneTemplate>
-						</WebPartPages:WebPartZone>
-					</div>
-					<div class="ITSmainContentWraper cell-margin tableCol-50">
-					
-						<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_Center%>" ID="CenterColumn">
-						    <ZoneTemplate></ZoneTemplate>
-						</WebPartPages:WebPartZone>				
-					
+				<div class="ITSContentWraper threeCol">
+					<div class="colMid">
+						<div class="colLeft">
+							<div class="ITSmainContentWraper">
+								<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_Center%>" ID="CenterColumn">
+									<ZoneTemplate></ZoneTemplate>
+								</WebPartPages:WebPartZone>			
+							</div>
+							<div class="ITSleftColumnWraper">
+								<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_CenterLeft%>" ID="CenterLeftColumn">
+									<ZoneTemplate></ZoneTemplate>
+								</WebPartPages:WebPartZone>
+							</div>
+							<div class="ITSrightColumnWraper">
+								<WebPartPages:WebPartZone runat="server" Title="<%$Resources:cms,WebPartZoneTitle_CenterRight%>" ID="CenterRightColumn">
+									<ZoneTemplate></ZoneTemplate>
+								</WebPartPages:WebPartZone>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

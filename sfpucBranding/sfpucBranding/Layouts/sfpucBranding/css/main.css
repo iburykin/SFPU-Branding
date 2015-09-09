@@ -116,13 +116,14 @@ html, body {
 body {
     background-color: #FFFFFF;
 	width: 100%;
-	min-width: 1024px;
+	min-width: 600px;
     color: #222;
     font-family: "Segoe UI", Segoe, Arial, Helvetica, Tahoma, sans-serif;
     font-weight: 300;
     font-size: 10pt;
     padding: 0;
     margin: 0 auto;
+	border:0;
 }
 a {
     color: #0076BD;
@@ -777,44 +778,47 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul > li.has-
 }
 
 /*ITS Page Layout Styles */
-.ITSleftColumnWraper, .ITSrightColumnWraper {
-	width: 20%;
-	height: 100%;
-	float: left;
-	/*padding: 0.3em;
-	box-shadow: 0 1px 1px #B6B7B7;
-	-webkit-box-shadow: 0 1px 1px #B6B7B7;
-	-moz-box-shadow: 0 1px 1px #B6B7B7;
-	background-color: rgba(255, 255, 255, 0.3);
-	border: solid 0 #B6B7B7;*/
-}
-.ITSmainContentWraper {
-	/*width: 57%;*/
-    max-width: 57%;
-  overflow: hidden;
-	height: 100%;
-	padding: 0 0.5em;
-	/*padding: 0.3em;
-	box-shadow: 0 1px 1px #B6B7B7;
-	-webkit-box-shadow: 0 1px 1px #B6B7B7;
-	-moz-box-shadow: 0 1px 1px #B6B7B7;
-	background-color: rgba(255, 255, 255, 0.3);
-	border: solid 0 #B6B7B7;*/
-}
-.ITSmainContentWraper div[id^="WebPartWPQ"] {
-	background: #fff;
-}
-.ITSmainContentWraper .ms-rtestate-field {
-	/*line-height: 0;*/
-}
-.ITSrightColumnWraper {
-	float: right;
-}
 .ITSContentWraper {
+	position: relative;
+	clear: both;
 	float: left;
 	width: 100%;
-	display: table-row;
+	overflow: hidden;
 }
+.colRight, .colMid, .colLeft {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.ITSmainContentWraper, .ITSleftColumnWraper, .ITSrightColumnWraper{
+	float: left;
+	position: relative;
+	padding: 0 0 1em 0;
+	overflow: hidden;
+}
+.threeCol {background: #fff;}
+.threeCol .colMid {
+	right: 25%;			/* width of the right column */
+	background: #fff;		/* center column background colour */
+}
+.threeCol .colLeft {
+	right:50%;			/* width of the middle column */
+	background:#fff;	/* left column background colour */
+}
+.threeCol .ITSmainContentWraper {
+	width: 46%;			/* width of center column content (column width minus padding on either side) */
+	left: 102%;			/* 100% plus left padding of center column */
+}
+.threeCol .ITSleftColumnWraper {
+	width: 21%;			/* Width of left column content (column width minus padding on either side) */
+	left: 31%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+}
+.threeCol .ITSrightColumnWraper{
+	width: 21%;			/* Width of right column content (column width minus padding on either side) */
+	left: 85%;			/* Please make note of the brackets here:
+					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}
+.ITSmainContentWraper div[id^="WebPartWPQ"] {background: #fff;}
 
 /* SHAREPOINT SPECIFIC STYLE CUSTOMIZATION */
 #s4-titlerow, #s4-bodyContainer {
