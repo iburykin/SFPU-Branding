@@ -794,7 +794,7 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul > li.has-
 	float: left;
 	position: relative;
 	padding: 0 0 1em 0;
-	overflow: hidden;
+	overflow-x: auto;
 }
 .threeCol {background: #fff;}
 .threeCol .colMid {
@@ -819,7 +819,7 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul > li.has-
 					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
 }
 .ITSmainContentWraper div[id^="WebPartWPQ"] {background: #fff;}
-
+div[id^="WebPartWPQ"].ms-wpContentDivSpace {overflow-x: auto;}
 /* SHAREPOINT SPECIFIC STYLE CUSTOMIZATION */
 #s4-titlerow, #s4-bodyContainer {
     padding: 0;
@@ -1138,4 +1138,3 @@ div[id^="WebPartWPQ"] {
 		color: #27AAE1;
 	}
 }
-
