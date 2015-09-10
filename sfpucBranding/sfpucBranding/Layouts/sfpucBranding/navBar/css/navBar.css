@@ -42,7 +42,8 @@
   border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-  background: #27a9e1;
+  background: url(../../img/gradientsForIE9/blueGradient.png) repeat-x;
+  background-size: contain;
   background: -o-linear-gradient(top, #27a9e1,  #0077be);
   background: -ms-linear-gradient(top, #27a9e1,  #0077be);
   background: -webkit-linear-gradient(top, #27a9e1,  #0077be);
