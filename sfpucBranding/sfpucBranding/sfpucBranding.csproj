@@ -106,6 +106,7 @@
     <Content Include="Layouts\sfpucBranding\img\favicon.ico" />
     <Content Include="Layouts\sfpucBranding\img\footer.png" />
     <Content Include="Layouts\sfpucBranding\img\goButton.gif" />
+    <Content Include="Layouts\sfpucBranding\img\grd-sfpuc.png" />
     <Content Include="Layouts\sfpucBranding\img\logo300-75.jpg" />
     <Content Include="Layouts\sfpucBranding\img\search_bg.gif" />
     <Content Include="Layouts\sfpucBranding\img\SFPUCico.ICO" />

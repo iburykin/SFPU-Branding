@@ -822,7 +822,7 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul > li.has-
 div[id^="WebPartWPQ"].ms-wpContentDivSpace {overflow-x: auto;}
 /*-------------------------------------------------------------------------------*/
 .table-layout-sfpuc{
-display: inline-flex;
+/*display: inline-flex;*/
 }
 .sfpuc-layout-table{
 min-width: 1024px;
@@ -974,6 +974,12 @@ div[id^="WebPartWPQ"] {
 	background: -webkit-linear-gradient(top, #27a9e1,  #0077be);
 	background: -moz-linear-gradient(top, #27a9e1,  #0077be);
 	background: linear-gradient(to bottom, #27a9e1,  #0077be);
+    
+    /*------------ie9*/
+    background-image: url('../img/grd-sfpuc.png');
+    background-size: contain;
+    /*-------------*/
+
 	color: #FFFFFF;
 	font-size: 11pt;
 	font-weight: bold;
@@ -1063,6 +1069,10 @@ div[id^="WebPartWPQ"] {
     clear: both;
 }
 
+.grd-sfpuc {
+    background-image: url('../img/grd-sfpuc.png');
+    background-size: contain;
+}
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
