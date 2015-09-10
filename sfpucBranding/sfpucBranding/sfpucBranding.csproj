@@ -106,13 +106,9 @@
     <Content Include="Layouts\sfpucBranding\img\favicon.ico" />
     <Content Include="Layouts\sfpucBranding\img\footer.png" />
     <Content Include="Layouts\sfpucBranding\img\goButton.gif" />
-<<<<<<< HEAD
     <Content Include="Layouts\sfpucBranding\img\gradientsForIE9\blueGradient.png" />
     <Content Include="Layouts\sfpucBranding\img\gradientsForIE9\hasSubGrad.png" />
     <Content Include="Layouts\sfpucBranding\img\gradientsForIE9\topNavGrad.png" />
-=======
-    <Content Include="Layouts\sfpucBranding\img\grd-sfpuc.png" />
->>>>>>> 3aeda66b887ac8d7956df211416f95dd3f01a3df
     <Content Include="Layouts\sfpucBranding\img\logo300-75.jpg" />
     <Content Include="Layouts\sfpucBranding\img\search_bg.gif" />
     <Content Include="Layouts\sfpucBranding\img\SFPUCico.ICO" />

@@ -842,7 +842,9 @@ width:50%;
 padding:0px 0px 0px 5px;
 width:25%;
 }
-
+.ms-srch-sb>input {
+        width: 132px !important;
+}
 /* SHAREPOINT SPECIFIC STYLE CUSTOMIZATION */
 #s4-titlerow, #s4-bodyContainer {
     padding: 0;
@@ -862,16 +864,17 @@ footer, .contentWraper:after {
 h1#pageTitle.SFPUCPageTitle {
     font-family: "Segoe UI", Segoe, Arial, Helvetica, Tahoma, sans-serif;
     font-style: italic;
-	font-size: 18pt;
-	font-weight: bolder;
+	font-size: 24pt;
+	font-weight: bold;
     color: #27AAE1;
 	display: inline-block;
     width: auto;
     position: absolute;
 	top: 12px;
     margin: 0;
-    padding: 1.1em 0.1em 0.1em 0;
+    padding: 0.9em 0.1em 0.1em 0;
     line-height: 0;
+        text-transform: capitalize;
 }
 div#titleAreaBox {
     margin: 0;
@@ -892,7 +895,15 @@ div#DeltaTopNavigation {
 	width: 86.6%;
 }
 div.real-breadcrumb {
-    font-weight: bold;
+    font-weight: normal;
+}
+div.real-breadcrumb a, div.real-breadcrumb span {
+    color: #262626;
+    text-decoration: none;
+}
+div.real-breadcrumb a:visited {
+    color: #262626;
+    text-decoration: none;
 }
 div[id$="_ChromeTitle"].ms-webpart-chrome-title {
 	display: block;
@@ -981,8 +992,8 @@ div[id^="WebPartWPQ"] {
 	background: linear-gradient(to bottom, #27a9e1,  #0077be);
     
     /*------------ie9*/
-    background-image: url('../img/grd-sfpuc.png');
-    background-size: contain;
+    /*background-image: url('../img/grd-sfpuc.png');
+    background-size: contain;*/
     /*-------------*/
 
 	color: #FFFFFF;

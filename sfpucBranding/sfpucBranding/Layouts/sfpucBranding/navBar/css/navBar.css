@@ -100,19 +100,23 @@
 }
 #cssmenu > ul > li > a {
   padding: 5px 10px;
-  font-size: 11pt;
-  /*font-weight: bold;*/
+  font-size: 10pt;
+  font-weight: bold;
   text-decoration: none;
-  color: #dddddd;
+  color: #ffffff;
   -webkit-transition: color .2s ease;
   -moz-transition: color .2s ease;
   -ms-transition: color .2s ease;
   -o-transition: color .2s ease;
   transition: color .2s ease;
 }
+div#cssmenu > ul > li:first-child {
+    padding-left: 20px;
+}
+
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li.active > a {
-  color: #ffffff;
+  color: #dddddd;
 }
 #cssmenu > ul > li.has-sub > a {
   padding-right: 10px;
