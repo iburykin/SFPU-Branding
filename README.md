@@ -10,3 +10,4 @@
 * Back-end code by [Oleksii Markichev](mailto:oleksii@essention.co), front-end by [Ivan Burykin](mailto:ivan.burykin@gmail.com)
 * [Bootstrap](http://getbootstrap.com/) is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
 * [jQuery](http://jquery.com/) is a fast, small, and feature-rich JavaScript library.
+* inspiration and some code :) from [ShareBoot](http://www.topsharepoint.com/shareboot-responsive-sharepoint-2013-theme) Responsive SharePoint 2013 Theme
