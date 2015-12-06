@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="MasterPagesModule" Url="_catalogs/masterPage">
-    <File Path="MasterPagesModule\sfpuc_base.master" Url="sfpuc_base.master"  Type="GhostableInLibrary" ReplaceContent="true"/>
+    <File Path="MasterPagesModule\sfpuc_base.master" Url="sfpuc_base.master"                    Type="GhostableInLibrary" ReplaceContent="true"/>
+    <File Path="MasterPagesModule\sfpuc_b3.master"   Url="sfpuc_b3.master"    Type="GhostableInLibrary" ReplaceContent="true"/>
   </Module>
 </Elements>

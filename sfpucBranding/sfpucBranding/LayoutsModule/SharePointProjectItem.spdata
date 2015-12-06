@@ -4,7 +4,8 @@
     <ProjectItemFile Source="Elements.xml" Target="LayoutsModule\" Type="ElementManifest" />
     <ProjectItemFile Source="SFPUCWebPartsLayout.aspx" Target="LayoutsModule\" Type="ElementFile" />
     <ProjectItemFile Source="SFPUCitsLayout.aspx" Target="LayoutsModule\" Type="ElementFile" />
-    <ProjectItemFile Source="SFPUC2ColumnsV2.aspx" Target="LayoutsModule\" Type="ElementFile" />
     <ProjectItemFile Source="SFPUCitsLayoutTable.aspx" Target="LayoutsModule\" Type="ElementFile" />
+    <ProjectItemFile Source="SFPUC_BlankWebPartPage2Column.aspx" Target="LayoutsModule\" Type="ElementFile" />
+    <ProjectItemFile Source="SFPUC_Bootstrap3CommunicationWorkspace.aspx" Target="LayoutsModule\" Type="ElementFile" />
   </Files>
 </ProjectItem>

@@ -22,8 +22,14 @@
       <Property Name="PublishingPreviewImage"           Value="~sitecollection/_layouts/15/sfpucBranding/img/SFPUCico.ICO" />
     </File>
     
-    <File Path="LayoutsModule\SFPUC2ColumnsV2.aspx" Url="SFPUC2ColumnsV2.aspx" Type="GhostableInLibrary" ReplaceContent="true">
-      <Property Name="Title"                            Value="SFPUC 2ColumnsV2 Test Layout" />
+    <File Path="LayoutsModule\SFPUC_BlankWebPartPage2Column.aspx" Url="SFPUC_BlankWebPartPage2Column.aspx" Type="GhostableInLibrary" ReplaceContent="true">
+      <Property Name="Title"                            Value="SFPUC BlankWebPartPage 2ColumnsV2 Test Layout" />
+      <Property Name="MasterPageDescription"            Value="Use this for creating content." />
+      <Property Name="ContentType"                      Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingPreviewImage"           Value="~sitecollection/_layouts/15/sfpucBranding/img/SFPUCico.ICO" />
+    </File>
+    <File Path="LayoutsModule\SFPUC_Bootstrap3CommunicationWorkspace.aspx" Url="SFPUC_Bootstrap3CommunicationWorkspace.aspx" Type="GhostableInLibrary" ReplaceContent="true">
+	  <Property Name="Title"                            Value="SFPUC Bootstrap3 2Columns Test Layout" />
       <Property Name="MasterPageDescription"            Value="Use this for creating content." />
       <Property Name="ContentType"                      Value="$Resources:cmscore,contenttype_pagelayout_name;" />
       <Property Name="PublishingPreviewImage"           Value="~sitecollection/_layouts/15/sfpucBranding/img/SFPUCico.ICO" />

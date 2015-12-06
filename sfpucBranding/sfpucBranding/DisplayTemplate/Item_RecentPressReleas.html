@@ -1,0 +1,80 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <title>Recent Press Releases(withoutimg)(item)</title>
+
+    <!--[if gte mso 9]><xml>
+    <mso:CustomDocumentProperties>
+    <mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+    <mso:ManagedPropertyMapping msdt:dt="string">
+        'Picture URL'{Picture URL}:'PublishingImage;PictureURL;PictureThumbnailURL',
+        'Link URL'{Link URL}:'Path',
+        'Line 1'{Line 1}:'Title',
+        'Line 2'{Line 2}:'Description',
+        'Line 3'{Line 3}:'',
+        'SecondaryFileExtension',
+        'Location':'Location',
+        'DateEvent':'EventDateOWSDATE',
+        'ArticleStartDate':'ArticleStartDateOWSDATE',
+        'PublishingPageContent':'PublishingPageContentOWSHTML',
+        'SecondaryFileExtension','ContentTypeId'
+
+    </mso:ManagedPropertyMapping>
+    <mso:MasterPageDescription msdt:dt="string"></mso:MasterPageDescription>
+    <mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106603</mso:ContentTypeId>
+    <mso:TargetControlType msdt:dt="string">;#Content Web Parts;#</mso:TargetControlType>
+    <mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+    <mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+    </xml><![endif]-->
+
+
+</head>
+<body>
+    <script>
+        $includeLanguageScript(this.url, "~sitecollection/_catalogs/masterpage/Display Templates/Language Files/{Locale}/CustomStrings.js");
+
+    </script>
+
+    <div id="Item_RPR">
+
+        <!--#_
+
+        var Title = $getItemValue(ctx, "Line 1");
+
+        var linkURL = $getItemValue(ctx, "Link URL");
+
+        // var ArticleStartDate = ctx.CurrentItem.ArticleStartDateOWSDATE;
+        var ArticleStartDate = $getItemValue(ctx, "ArticleStartDate");
+        var localArticleDate = new Date(ArticleStartDate);
+
+
+        var PublishingPageContentHTML = $getItemValue(ctx, "PublishingPageContent");
+        var div = document.createElement("div");
+        div.innerHTML= PublishingPageContentHTML;
+        var PublishingPageContentL = div.textContent|| div.innerText|| "";
+        var PublishingPageContent = "";
+        if (PublishingPageContentL.toString().length > 200) {
+        PublishingPageContent = PublishingPageContentL.toString().substring(0,200) + "...";
+        }
+        else {
+        PublishingPageContent = PublishingPageContentL;
+        }
+
+            var lastch=linkURL.value.lastIndexOf("/");
+            if (!lastch){lastch=0}
+        ctx.viewAllURL = linkURL.value.substring(0,lastch);
+        _#-->
+
+        <div class="sfpuc-item">
+
+            <div class="sfpuc-details">
+                <div class="sfpuc-date">_#= localArticleDate.format("MM/dd/yyyy") =#_</div>
+                <div class="sfpuc-item-title"><a href="_#= linkURL =#_">_#= Title =#_</a></div>
+
+                <div class="sfpuc-body">_#= $htmlEncode(PublishingPageContent) =#_</div>
+            </div>
+        </div>
+        <hr />
+
+    </div>
+</body>
+</html>

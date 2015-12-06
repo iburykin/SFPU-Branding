@@ -54,7 +54,7 @@
 				</div>
 			</div>
 			<SharePointWebControls:ScriptBlock runat="server">
-			if(typeof(MSOLayout_MakeInvisibleIfEmpty) == &quot;function&quot;) 
+			if(typeof(MSOLayout_MakeInvisibleIfEmpty) == "function") 
 			
 			{MSOLayout_MakeInvisibleIfEmpty();}</SharePointWebControls:ScriptBlock>
 		</div>

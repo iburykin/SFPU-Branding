@@ -125,41 +125,41 @@
                                             </SharePoint:SiteLogoImage>
                                         </SharePoint:SPSimpleSiteLink>
                                     </SharePoint:AjaxDelta>
-                                    
                                 </div>
-                                <div class="ms-breadcrumb-box ms-tableCell ms-verticalAlignTop">
-                                    <div id="topNav" class="SFPUCNavigation">
-                                        <div class="ms-breadcrumb-top">
-                                            <div data-name="Page Field: Title">
-                                                <h1 class="SFPUCPageTitle" id="pageTitle">                                                    
-                                                   <SharePoint:ProjectProperty Property="Title" runat="server" />                                                    
-                                                </h1>
-                                            </div>
-                                            <SharePoint:AjaxDelta id="DeltaTopNavigation" BlockElement="true" CssClass="ms-displayInline" runat="server">
-                                            <SharePoint:DelegateControl runat="server" ControlId="TopNavigationDataSource" Id="topNavigationDelegate">
-                                            <Template_Controls>
-                                            <asp:SiteMapDataSource ShowStartingNode="False" SiteMapProvider="SPNavigationProvider" id="topSiteMap" runat="server" StartingNodeUrl="sid:1002" />
-                                            </Template_Controls>
-                                            </SharePoint:DelegateControl>
-                                            <a name="startNavigation">
-                                            </a>
-                                            <asp:ContentPlaceHolder id="PlaceHolderTopNavBar" runat="server">
-											<SharePoint:AspMenu ID="TopNavigationMenu" Runat="server" RenderingMode="List" EnableViewState="false" DataSourceID="topSiteMap" AccessKey="&lt;%$Resources:wss,navigation_accesskey%&gt;" UseSimpleRendering="false" UseSeparateCss="false" Orientation="Horizontal" StaticDisplayLevels="2" AdjustForShowStartingNode="true" MaximumDynamicDisplayLevels="3" SkipLinkText="" />
-                                            
-                                            </asp:ContentPlaceHolder>
-                                            </SharePoint:AjaxDelta>
-                                        </div>
-                                    </div>
+								<div data-name="Page Field: Title">
+                                    <h1 class="SFPUCPageTitle" id="pageTitle">                                                    
+										<SharePoint:ProjectProperty Property="Title" runat="server" />                                                    
+                                    </h1>
                                 </div>
-                                <asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">
+								<asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">
 									<div id="searchInputBox">
-                                        <SharePoint:DelegateControl runat="server" ControlId="SmallSearchInputBox" />
-                                        <script type="text/javascript"> 
-                                            $('#SearchBox').parent().parent().css('background-color', 'transparent')
-                                        </script>
-                                    </div>
-                                </asp:ContentPlaceHolder>
+										<SharePoint:DelegateControl runat="server" ControlId="SmallSearchInputBox" />
+										<script type="text/javascript"> 
+											$('#SearchBox').parent().parent().css('background-color', 'transparent')
+										</script>
+									</div>
+								</asp:ContentPlaceHolder>                                
                             </div>
+							<div class="ms-breadcrumb-box ms-tableCell ms-verticalAlignTop">
+								<div class="ms-breadcrumb-top">
+									<div id="topNav" class="SFPUCNavigation">                                        
+
+										<SharePoint:AjaxDelta id="DeltaTopNavigation" BlockElement="true" CssClass="ms-displayInline" runat="server">
+										<SharePoint:DelegateControl runat="server" ControlId="TopNavigationDataSource" Id="topNavigationDelegate">
+										<Template_Controls>
+										<asp:SiteMapDataSource ShowStartingNode="False" SiteMapProvider="SPNavigationProvider" id="topSiteMap" runat="server" StartingNodeUrl="sid:1002" />
+										</Template_Controls>
+										</SharePoint:DelegateControl>
+										<a name="startNavigation">
+										</a>
+										<asp:ContentPlaceHolder id="PlaceHolderTopNavBar" runat="server">
+										<SharePoint:AspMenu ID="TopNavigationMenu" Runat="server" RenderingMode="List" EnableViewState="false" DataSourceID="topSiteMap" AccessKey="&lt;%$Resources:wss,navigation_accesskey%&gt;" UseSimpleRendering="false" UseSeparateCss="false" Orientation="Horizontal" StaticDisplayLevels="2" AdjustForShowStartingNode="true" MaximumDynamicDisplayLevels="3" SkipLinkText="" />
+										
+										</asp:ContentPlaceHolder>
+										</SharePoint:AjaxDelta>
+									</div>
+								</div>
+							</div>
                         </div>
                     </div>
                 </header>

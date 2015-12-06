@@ -1,11 +1,11 @@
-﻿
-html {
+﻿html {
     color: #222;
     font-size: 1em;
     line-height: 1;
     width: 100%;
     position: relative;
     min-height: 100%;
+    overflow-x: auto;
 }
 /* font-family: "MyriadProRegular"; */
 @font-face {
@@ -124,6 +124,7 @@ body {
     padding: 0;
     margin: 0 auto;
 	border:0;
+    overflow-x: auto; 
 }
 a {
     color: #0076BD;
@@ -169,13 +170,14 @@ h3{
 }
 header {
     height: 111px;
-    width: 87%;
+    width: 100%;
     margin: 0 auto;
 	padding: 0;
 }
 footer {
     height: 170px;
     width: 100%;
+    margin: 0px auto;
     background: url("../img/footer.png") left no-repeat;
 	text-align: right;
 	position: relative;
@@ -200,10 +202,6 @@ footer p {
 	padding: 0.2em 0.5em 0.2em;
 	width: 23%;
 	height: 100%;
-	/*box-shadow: 0 1px 1px #B6B7B7;
-    -webkit-box-shadow: 0 1px 1px #B6B7B7;
-    -moz-box-shadow: 0 1px 1px #B6B7B7;
-    background-color: rgba(255, 255, 255, 0.3);*/
     border: solid 0 #B6B7B7;
 }
 article {
@@ -211,10 +209,6 @@ article {
 	width: auto;
 	padding: 0;
 	margin: 0.1em 0;
-    /*box-shadow: 0 1px 1px #B6B7B7;
-    -webkit-box-shadow: 0 1px 1px #B6B7B7;
-    -moz-box-shadow: 0 1px 1px #B6B7B7;
-    background-color: #FFFFFF;*/
     border: solid 0 #B6B7B7;
 }
 article .titleH3{
@@ -234,7 +228,7 @@ article p{
 
 .topLogoAndPageTitle {
     width: 100%;
-	background: url("../img/topbar.png") right no-repeat;
+	background: url("../img/topbar.png") top right no-repeat;
     height: 64px;
 	padding: 0;
 	border-radius: 2px;
@@ -265,27 +259,14 @@ img#ctl00_onetidHeadbnnr2.ms-siteicon-img.SFPUCLogo{
 }
 .contentWraper {
 	min-height: 100%;
-    /*padding: 1em 0.5em;*/
     margin: 1em auto;	
-    width: 85%;
-    /*border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    box-shadow: 0 7px 7px 0 rgba(0,0,0,0.47);
-    -webkit-box-shadow: 0 7px 7px 0 rgba(0,0,0,0.47);
-    -moz-box-shadow: 0 7px 7px 0 rgba(0,0,0,0.47);
-    background-color: rgba(182, 183, 183, 0.3);
-    border: solid 0 #B6B7B7;*/
+    width: 100%;
 }
 .mainContentLeft {
 	width: 70%;
 	height: 100%;
 	float: left;
 	padding: 0.2em 0.5em 0.2em;
-	/* box-shadow: 0 1px 1px #B6B7B7;
-    -webkit-box-shadow: 0 1px 1px #B6B7B7;
-    -moz-box-shadow: 0 1px 1px #B6B7B7;
-   background-color: rgba(255, 255, 255, 0.3);*/
    	border: solid 0 #B6B7B7;
 }
 .mainRowContentDiv {
@@ -314,7 +295,6 @@ span.SFPUCimageBckg {
 	margin: 0;
 }
 .mainContentP {
-  /*  border-left: 3px #b1b1b2 solid;*/
     padding-left: 0.7em;
     padding-top: 0.5em;
     padding-bottom: 0.7em;
@@ -358,6 +338,9 @@ span.SFPUCimageBckg {
 }
 
 /* Top Navigation */
+div#topNav.SFPUCNavigation {
+	margin-top: 5px;
+}
 div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu,
 div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul,
 div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul li,
@@ -399,7 +382,6 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu {
   background: -webkit-linear-gradient(top, #FFFFFF,  #DCDCDC);
   background: -moz-linear-gradient(top, #FFFFFF,  #DCDCDC);
   background: linear-gradient(to bottom, #FFFFFF,  #DCDCDC);
-  /*box-shadow: inset 0 -3px 0 #B6B7B7, inset 0 -3px 3px #B6B7B7, inset 0 2px 2px #FFFFFF, inset 1px 0 2px #FFFFFF, inset -1px 0 2px #FFFFFF;*/
 }
 div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-center > ul {
   font-size: 0;
@@ -425,7 +407,6 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li > a {
   padding: 10px 15px;
   font-size: 13px;
   color: #666666;
- /* text-transform: uppercase; */
   letter-spacing: 1px;
   text-shadow: 0 0.3px 0 rgba(0, 0, 0, 0.25);
   font-weight: 700;
@@ -602,158 +583,10 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul > li.has-
   border-right-color: #1c89b5;
 }
 
-
-.cell-margin {
- /* margin: 0px 0px 5px 0px !important;*/
-}
-.tableCol-50 {
-    /*display: block;
-  min-width: inherit;*/
-}
-
-
-/* TODO for small width
-@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
-  div#topNav.SFPUCNavigation {
-    width: 100%;
-  }
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul ul,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-center > ul,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li > ul,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li:hover > ul,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li:hover > ul,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul ul li:hover > ul,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenun.align-right ul ul li:hover > ul,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul ul li:hover > ul {
-    position: relative;
-    left: 0;
-    right: auto;
-    top: 0;
-    width: 100%;
-    display: none;
-    padding: 0;
-    opacity: 1;
-    text-align: left;
-  }
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul li {
-    width: 100%;
-    border-top: 1px solid rgba(120, 120, 120, 0.2);
-  }
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li > a,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li a,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li:first-child > a,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li:last-child > a {
-    width: 100%;
-    border-radius: 0;
-    box-shadow: none;
-    background: none;
-  }
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul li a {
-    padding-left: 12.5px;
-  }
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li a {
-    padding: 14px 25px 14px 27.5px;
-  }
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul ul li a {
-    padding-left: 42.5px;
-  }
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul ul ul li a {
-    padding-left: 57.5px;
-  }
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li.has-sub > a:after,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu > ul > li.has-sub > a:before,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li.has-sub > a:after,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul li.has-sub > a:before {
-    display: none;
-  }
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu #menu-button {
-    position: relative;
-    display: block;
-    padding: 20px;
-    padding-left: 12.5px;
-    cursor: pointer;
-    font-size: 13px;
-    color: #ffffff;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu .submenu-button {
-    position: absolute;
-    right: 0;
-    display: block;
-    width: 53px;
-    height: 53px;
-    border-left: 1px solid rgba(120, 120, 120, 0.2);
-    z-index: 10;
-    cursor: pointer;
-  }
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul .submenu-button {
-    height: 41px;
-  }
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul .submenu-button:after,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu #menu-button:after {
-    content: '';
-    position: absolute;
-    right: 12.5px;
-    top: 12.5px;
-    display: block;
-    width: 28px;
-    height: 28px;
-    border-radius: 15px;
-    background: #3db2e1;
-    background: -webkit-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
-    background: -ms-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
-    background: -moz-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
-    background: -o-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
-    background: linear-gradient(to bottom, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
-    box-shadow: inset 0 -1px 1px #209ed0, inset 0 2px 1px #7fcceb;
-    background-size: 56px 56px;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    -webkit-transition: all 0.1s ease-out;
-    -moz-transition: all 0.1s ease-out;
-    -ms-transition: all 0.1s ease-out;
-    -o-transition: all 0.1s ease-out;
-    transition: all 0.1s ease-out;
-  }
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul .submenu-button.submenu-opened:after,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu #menu-button.menu-opened:after {
-    background-position: 0 -28px;
-  }
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul .submenu-button:after {
-    top: 6.5px;
-  }
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu #menu-button:before,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu .submenu-button:before {
-    content: '';
-    position: absolute;
-    right: 22.5px;
-    top: 25.5px;
-    display: block;
-    width: 0;
-    height: 0;
-    border: 4px solid transparent;
-    border-top-color: #ffffff;
-    z-index: 99;
-  }
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu ul ul .submenu-button:before {
-    top: 19.5px;
-  }
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu #menu-button.menu-opened:before,
-  div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu .submenu-button.submenu-opened:before {
-    border-top-color: #19799f;
-  }
-}*/
-
 /* Container for search field and go button */
 #searchInputBox {
 	width: 300px;
+	margin-top: 20px;
 }
 #SearchBox .ms-srch-sb-border,
 #SearchBox .ms-srch-sb-border:hover {
@@ -763,11 +596,11 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul > li.has-
     height: 25px;
     width: 260px;
 	padding-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
     border: 0 solid #000000;
     float: left;
-    font-size: 11px !important;
-    line-height: 25px !important;
+    font-size: 13px !important;
+    line-height: 20px !important;
 	background-color: #edf4fe;
     background: url("../img/search_bg.gif") 0 0 no-repeat;
 	border-radius: 12.5px;
@@ -823,11 +656,10 @@ div#topNav.SFPUCNavigation div#zz1_TopNavigationMenu.align-right ul ul > li.has-
 }
 .ITSmainContentWraper div[id^="WebPartWPQ"] {background: #fff;}
 div[id^="WebPartWPQ"].ms-wpContentDivSpace {overflow-x: auto;}
+
 /*-------------------------------------------------------------------------------*/
-.table-layout-sfpuc{
-/*display: inline-flex;*/
-}
-.sfpuc-layout-table{
+
+.sfpuc-layout-table, .table-layout-sfpuc{
 min-width: 1024px;
 }
 .cell-left-sfpuc {
@@ -845,14 +677,16 @@ width:25%;
 .ms-srch-sb>input {
         width: 132px !important;
 }
+
 /* SHAREPOINT SPECIFIC STYLE CUSTOMIZATION */
 #s4-titlerow, #s4-bodyContainer {
     padding: 0;
     margin: 0;
 }
-#s4-bodyContainer, footer {
-	width: auto;
+span[id^="WebPartTitleWPQ"] > h2.ms-webpart-titleText {
+	line-height: 1.3;
 }
+
 /* Styles to stick footer to bottom */
 .contentWraper:after {
 	content: ""; 
@@ -861,6 +695,8 @@ width:25%;
 footer, .contentWraper:after {
 	height: 170px;
 }
+
+
 h1#pageTitle.SFPUCPageTitle {
     font-family: "Segoe UI", Segoe, Arial, Helvetica, Tahoma, sans-serif;
     font-style: italic;
@@ -870,11 +706,11 @@ h1#pageTitle.SFPUCPageTitle {
 	display: inline-block;
     width: auto;
     position: absolute;
-	top: 12px;
+	top: 3px;
     margin: 0;
     padding: 0.9em 0.1em 0.1em 0;
     line-height: 0;
-        text-transform: capitalize;
+    text-transform: capitalize;
 }
 div#titleAreaBox {
     margin: 0;
@@ -888,12 +724,6 @@ div#titleAreaBox {
     margin-right: 20px;
     float: left;
 }
-div#DeltaTopNavigation {
-    position: absolute;
-    top: 78px;
-	margin-left: -300px;
-	width: 86.6%;
-}
 div.real-breadcrumb {
     font-weight: normal;
 }
@@ -905,7 +735,7 @@ div.real-breadcrumb a:visited {
     color: #262626;
     text-decoration: none;
 }
-div[id$="_ChromeTitle"].ms-webpart-chrome-title {
+div[id$="_ChromeTitle"].ms-webpart-chrome-title, .sfpuc-twitter-header {
 	display: block;
 	background: url(../img/gradientsForIE9/blueGradient.png) repeat-x;
 	background-size: contain;
@@ -942,7 +772,9 @@ nobr span {
     word-break: break-word;
 
 }
+
 /*list-view web parts style customization */
+
 div[id^="WebPartWPQ"] table td[id^="scriptWPQ"] table{
 	width: 95%;
 	margin: 1em auto;
@@ -955,27 +787,9 @@ div[id^="WebPartWPQ"] table td[id^="scriptWPQ"] table{
 	word-break: break-word;
 	border: solid 1px #c6c6c6;
 }	
-
-/* Announcements web part */
-div[id^="WebPartWPQ"] {
-	/*background: #DCDCDC;*/
-}
-.announcements {
-	width: 90%;
-	margin: 0 auto;
-	margin-top: 1em;
-	padding: 1em 0.5em;
-	background: #ffffff;
-	height: 200px;
-	overflow-y: scroll;
-	white-space: normal;
-	word-break: break-word;
-	border: solid 1px #c6c6c6;
-}
-.announcement-title {
-	color: #000000;
-	font-weight: bold;
-	float: left;
+.more a, .more a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
 }
 .more {
 	float: right;
@@ -990,12 +804,6 @@ div[id^="WebPartWPQ"] {
 	background: -webkit-linear-gradient(top, #27a9e1,  #0077be);
 	background: -moz-linear-gradient(top, #27a9e1,  #0077be);
 	background: linear-gradient(to bottom, #27a9e1,  #0077be);
-    
-    /*------------ie9*/
-    /*background-image: url('../img/grd-sfpuc.png');
-    background-size: contain;*/
-    /*-------------*/
-
 	color: #FFFFFF;
 	font-size: 11pt;
 	font-weight: bold;
@@ -1008,10 +816,7 @@ div[id^="WebPartWPQ"] {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 }
-.more a {
-	color: #FFFFFF;
-	text-decoration: none;
-}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -1019,7 +824,6 @@ div[id^="WebPartWPQ"] {
 /*
  * Hide visually and from screen readers:
  */
-
 .hidden {
     display: none !important;
 }
@@ -1089,98 +893,29 @@ div[id^="WebPartWPQ"] {
     background-image: url('../img/grd-sfpuc.png');
     background-size: contain;
 }
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-
+/*==========================Fix width======*/
+#s4-workspace {
+    width: 100%
+}
+#s4-bodyContainer {
+    min-width: 1024px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+html.ms-dialog #demoID {
+	width:auto;
+	padding:0px;
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+/*===============BOOTSTRAP Styles==========*/
+#DeltaPlaceHolderMain .row div[id$="_ChromeTitle"].ms-webpart-chrome-title {
+	padding: 0;
 }
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; 
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: none;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-        font-size: 1em;
-        font-family: "Segoe UI", Segoe, Arial, Helvetica, Tahoma, sans-serif;
-        color: #424242;
-		padding: 0;
-		margin: 0;
-    }
-
-    h2,
-    h3{
-		font-family: "Segoe UI", Segoe, Arial, Helvetica, Tahoma, sans-serif;
-        page-break-after: avoid;
-		font-size: 1.4em;
-		color: #27AAE1;
-	}
+#s4-bodyContainer .container-fluid {
+	background: url("../img/topbar.png") top right no-repeat;
+}
+#s4-workspace .real-breadcrumb {
+	padding: 0 0 1em 1em;
+	margin-bottom: 1em !important;
 }

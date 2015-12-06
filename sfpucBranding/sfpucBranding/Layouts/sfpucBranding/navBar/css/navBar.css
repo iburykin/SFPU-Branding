@@ -42,6 +42,7 @@
   border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
+
   background: url(../../img/gradientsForIE9/blueGradient.png) repeat-x;
   background-size: contain;
   background: -o-linear-gradient(top, #27a9e1,  #0077be);
@@ -49,6 +50,9 @@
   background: -webkit-linear-gradient(top, #27a9e1,  #0077be);
   background: -moz-linear-gradient(top, #27a9e1,  #0077be);
   background: linear-gradient(to bottom, #27a9e1,  #0077be);
+
+   
+
 }
 #menu-line {
   position: absolute;
@@ -103,7 +107,7 @@
   font-size: 10pt;
   font-weight: bold;
   text-decoration: none;
-  color: #ffffff;
+  color: #FFF;
   -webkit-transition: color .2s ease;
   -moz-transition: color .2s ease;
   -ms-transition: color .2s ease;

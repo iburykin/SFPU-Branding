@@ -1,0 +1,105 @@
+<script language="javascript" type="text/javascript" src="/_layouts/15/sfpucBranding/js/jquery.timers.min.js"></script>
+<script type="text/javascript">
+
+//var CalendarWidth = 742;
+ function moveTOTop(){
+     var delRow=false;
+     $(" .ms-acal-mdiv").parent().each(function()
+     { //84  12-5 10-4 8-3 6-2 4-1 
+         //$("AsynchronousViewDefault_CalendarView").stopTime( 'divMovTimer');	
+         delRow=true;
+         var posTopStart=75+(week-1)*84;
+         var posEnd=posTopStart+84;
+         var posTop = $(this).css("top").replace("px","");
+			
+         if (posTopStart <= posTop && posTop < posEnd)
+         {
+             //alert("234");
+             var currentTOpPlase=posTop-(week-1)*84;
+             $(this).css("top",currentTOpPlase+"px")
+         }
+         else{
+             $(this).remove()  ;
+         }
+			
+			
+     }) 
+     if(delRow){
+         dell3weeks();
+     }
+ }
+function dell3weeks(){
+    var flagWeek=false;
+    theCalTable.find('tr').each(function( index ) {
+        if (!$(this).hasClass( "claendarCurrentWeek" ))
+        {	
+            if (!flagWeek) {
+                //weekNumber=index;
+                $( this ).remove()//;addClass("hide")
+            }
+					
+            flagWeek=false;
+        }
+        else
+        {
+            flagWeek=true;
+        }
+			
+    }); 
+}
+var theCalTable = $("table.ms-acal-month");//document.getElementById("ctl00_ctl34_g_abfaa7a2_bfd5_42ef_afb3_205ff9115cd0_ctl01_ctl00_ctl00").find
+var actualWeekRow=$(".ms-acal-today").parent().parent();
+if (theCalTable != null && actualWeekRow!=null)
+{
+    actualWeekRow.addClass("claendarCurrentWeek");
+    var flagWeek=false;
+    var weekNumber=0;
+    theCalTable.find('tr').each(function( index ) {
+        if (!$(this).hasClass( "claendarCurrentWeek" ))
+        {	
+            if (!flagWeek) {
+                weekNumber=index;
+                //$( this ).remove()//;addClass("hide")
+            }
+					
+            flagWeek=false;
+        }
+        else
+        {
+            flagWeek=true;
+        }
+			
+    });
+    //$("#AsynchronousViewDefault_CalendarView").find("div").each(function( index ) {
+    //	if ($(this).hasClass( "ms-acal-mdiv" )) {
+    //		$( this ).remove();
+    //	}
+		
+    //});
+    var week = 0;
+    switch(weekNumber) {
+        case 4:
+            week=1;
+            break;
+        case 6:
+            week=2;
+            break;
+        case 8:
+            week=3;
+            break;
+        case 10:
+            week=4;
+            break;
+        case 12:
+            week=5;
+            break;
+    }
+			
+
+    window.addEventListener("load", moveTOTop, false);
+}
+
+</script>
+<style type="text/css">
+.hide {display:none;}
+</style>

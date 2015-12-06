@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="d5fa08ad-08b1-4d74-9951-ddeb7bf5e0bd" solutionId="d5fa08ad-08b1-4d74-9951-ddeb7bf5e0bd" resetWebServer="false" sharePointProductVersion="15.0" name="WeekAheadCalendar" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="fd67382d-fb7c-49f7-9c99-3992ce302ba9" />
+  </features>
+</package>

@@ -42,19 +42,33 @@
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Server, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Server.Search, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Taxonomy, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\EssnLog.cs" />
+    <Compile Include="Features\SFPUCBrandingFeature\SFPUCBrandingFeature.EventReceiver.cs">
+      <DependentUpon>SFPUCBrandingFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Utility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="DisplayTemplate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0da7e3b8-08e6-40cb-9ebd-c73dd4b66584}</SharePointProjectItemId>
+    </None>
     <None Include="Features\SFPUCBrandingFeature\SFPUCBrandingFeature.feature">
       <FeatureId>{dcdc9ee8-bbb3-4cd5-a51c-7f1bb4849e7d}</FeatureId>
     </None>
@@ -68,6 +82,9 @@
     <None Include="Layouts\sfpucBranding\css\MyriadProRegular.otf" />
     <None Include="Layouts\sfpucBranding\css\MyriadProRegular.ttf" />
     <None Include="Layouts\sfpucBranding\css\MyriadProRegular.woff" />
+    <None Include="Layouts\sfpucBranding\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Layouts\sfpucBranding\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Layouts\sfpucBranding\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Layouts\sfpucBranding\navBar\css\MyriadPro-Regular.otf" />
     <None Include="Layouts\sfpucBranding\navBar\css\MyriadProRegular.otf" />
     <None Include="Layouts\sfpucBranding\navBar\css\MyriadProRegular.ttf" />
@@ -75,6 +92,7 @@
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{fc60381e-3fef-4ab8-bbe1-d61c46aa6af5}</SharePointProjectItemId>
     </None>
+    <None Include="MasterPagesModule\sfpuc_b3.master" />
     <None Include="MasterPagesModule\sfpuc_base.master" />
     <None Include="MasterPagesModule\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{9dc80a9c-a659-4074-ad1d-081be9a412cc}</SharePointProjectItemId>
@@ -89,19 +107,32 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="DisplayTemplate\Control_RecentPressReleases.html" />
+    <Content Include="DisplayTemplate\Control_SFPUCEvents.html" />
+    <Content Include="DisplayTemplate\Elements.xml" />
+    <Content Include="DisplayTemplate\Item_RecentPressReleas.html" />
+    <Content Include="DisplayTemplate\Item_SFPUCEvents.html" />
     <Content Include="Features\SFPUCBrandingFeature\SFPUCBrandingFeature.Template.xml">
       <DependentUpon>SFPUCBrandingFeature.feature</DependentUpon>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="LayoutsModule\SFPUC_BlankWebPartPage2Column.aspx" />
     <Content Include="LayoutsModule\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="LayoutsModule\SFPUC2ColumnsV2.aspx" />
     <Content Include="LayoutsModule\SFPUCitsLayout.aspx" />
     <Content Include="LayoutsModule\SFPUCitsLayoutTable.aspx" />
     <Content Include="LayoutsModule\SFPUCWebPartsLayout.aspx" />
+    <Content Include="LayoutsModule\workspace.aspx" />
+    <Content Include="Layouts\sfpucBranding\css\bootstrap.css" />
+    <Content Include="Layouts\sfpucBranding\css\DispalyTemplateEvents.css" />
+    <Content Include="Layouts\sfpucBranding\css\DispalyTemplateRecentPressRelease.css" />
+    <Content Include="Layouts\sfpucBranding\css\font-awesome.css" />
     <Content Include="Layouts\sfpucBranding\css\main.css" />
     <Content Include="Layouts\sfpucBranding\css\normalize.css" />
+    <Content Include="Layouts\sfpucBranding\css\ShareBoot.css" />
+    <Content Include="Layouts\sfpucBranding\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Layouts\sfpucBranding\html\twitter.html" />
     <Content Include="Layouts\sfpucBranding\img\323583025-pag2.png" />
     <Content Include="Layouts\sfpucBranding\img\favicon.ico" />
     <Content Include="Layouts\sfpucBranding\img\footer.png" />
@@ -115,10 +146,14 @@
     <Content Include="Layouts\sfpucBranding\img\topbar.jpg" />
     <Content Include="Layouts\sfpucBranding\img\topbar.png" />
     <Content Include="Layouts\sfpucBranding\img\water-header-background.png" />
+    <Content Include="Layouts\sfpucBranding\js\bootstrap.js" />
     <Content Include="Layouts\sfpucBranding\js\jquery-1.11.1.min.js" />
     <Content Include="Layouts\sfpucBranding\js\jquery-2.1.1.min.js" />
+    <Content Include="Layouts\sfpucBranding\js\jquery.timers.min.js" />
+    <Content Include="Layouts\sfpucBranding\html\CalendarCurrentWeek.html" />
     <Content Include="Layouts\sfpucBranding\js\main.js" />
     <Content Include="Layouts\sfpucBranding\js\plugins.js" />
+    <Content Include="Layouts\sfpucBranding\js\ShareBoot.js" />
     <Content Include="Layouts\sfpucBranding\js\vendor\modernizr-2.8.3.min.js" />
     <Content Include="Layouts\sfpucBranding\navBar\css\navBar.css" />
     <Content Include="Layouts\sfpucBranding\navBar\js\navBar.js" />

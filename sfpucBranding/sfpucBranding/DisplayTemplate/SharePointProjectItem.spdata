@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Control_SFPUCEvents.html" Target="DisplayTemplate\" Type="ElementFile" />
+    <ProjectItemFile Source="Item_SFPUCEvents.html" Target="DisplayTemplate\" Type="ElementFile" />
+    <ProjectItemFile Source="Elements.xml" Target="DisplayTemplate\" Type="ElementManifest" />
+    <ProjectItemFile Source="Item_RecentPressReleas.html" Target="DisplayTemplate\" Type="ElementFile" />
+    <ProjectItemFile Source="Control_RecentPressReleases.html" Target="DisplayTemplate\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

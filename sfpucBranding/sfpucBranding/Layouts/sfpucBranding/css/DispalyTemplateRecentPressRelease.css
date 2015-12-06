@@ -1,0 +1,19 @@
+﻿.sfpuc-item {
+	padding: 7px 14px 4px 8px;
+	color: #58595B;
+}
+span.sfpuc-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0076BD;
+    line-height: 30px;
+	padding: 3px 8px;
+}
+.sfpuc-item-title > a, .sfpuc-item-title > a:hover, .sfpuc-item-title > a:visited {
+    font-weight: bold;
+    color: #58595B;
+}
+.sfpuc-body {
+    margin-bottom: 10px;
+    color: #0076BD;
+}

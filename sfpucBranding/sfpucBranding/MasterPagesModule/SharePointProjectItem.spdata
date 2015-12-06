@@ -3,5 +3,6 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="MasterPagesModule\" Type="ElementManifest" />
     <ProjectItemFile Source="sfpuc_base.master" Target="MasterPagesModule\" Type="ElementFile" />
+    <ProjectItemFile Source="sfpuc_b3.master" Target="MasterPagesModule\" Type="ElementFile" />
   </Files>
 </ProjectItem>
