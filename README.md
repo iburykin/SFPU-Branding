@@ -1,10 +1,10 @@
-# Branding for San Francisco Public Utilities Commission new site (version 0.1)
+# Branding for San Francisco Public Utilities Commission SharePoint 2013 based site (version 0.1)
 ## Versions history
 ### version 0.1 changes
 * Bootstrap3 based 2 masterpages and 3 page layouts
 * Custom header and footer for masterpages
-* Custom content editor Menu web part
-* Custom web-part WeakAheadCalendar web part. It gives ability to see Week Calendar in Month View (only cells for days, no houres and minutes)
+* Content editor css3-Menu web part
+* Custom WeakAheadCalendar web part. It gives ability to see Week Calendar in Month View (only cells for days, no houres and minutes)
 
 ## Contributors:
 * Back-end code by [Oleksii Markichev](mailto:oleksii@essention.co), front-end by [Ivan Burykin](mailto:ivan.burykin@gmail.com)
